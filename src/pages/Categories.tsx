@@ -7,12 +7,15 @@ import Table from '../components/common/Table';
 import Modal from '../components/common/Modal';
 import LoadingSpinner from '../components/common/LoadingSpinner';
 import { Plus, Edit, Trash2 } from 'lucide-react';
+import Pagination from '../components/common/Pagination';
 
 const Categories: React.FC = () => {
   const [categories, setCategories] = useState<Category[]>([]);
   const [loading, setLoading] = useState(true);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [editingCategory, setEditingCategory] = useState<Category | null>(null);
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 10;
 
   useEffect(() => {
     const fetchCategories = async () => {
@@ -94,6 +97,9 @@ const Categories: React.FC = () => {
     }
   ];
 
+  const paginatedCategories = categories.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
+  const totalPages = Math.ceil(categories.length / itemsPerPage);
+
   if (loading) {
     return (
       <div className="flex items-center justify-center h-64">
@@ -118,8 +124,16 @@ const Categories: React.FC = () => {
       </div>
 
       <Card>
-        <Table data={categories} columns={columns} />
+        <Table data={paginatedCategories} columns={columns} />
       </Card>
+
+      {totalPages > 1 && (
+        <Pagination
+          currentPage={currentPage}
+          totalPages={totalPages}
+          onPageChange={setCurrentPage}
+        />
+      )}
 
       <CategoryModal
         isOpen={isModalOpen}

@@ -28,9 +28,9 @@ const Users: React.FC = () => {
   }, []);
 
   const roleMap: Record<User['role'], number> = {
-    Admin: 3,
-    Staff: 2,
     Customer: 1,
+    Staff: 2,
+    Admin: 3,
   };
 
   const handleAddUser = async (e: React.FormEvent) => {

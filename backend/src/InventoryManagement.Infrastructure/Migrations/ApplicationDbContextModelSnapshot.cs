@@ -64,32 +64,32 @@ namespace InventoryManagement.Infrastructure.Migrations
                         new
                         {
                             Id = new Guid("11111111-1111-1111-1111-111111111111"),
-                            CreatedAt = new DateTime(2025, 7, 9, 19, 0, 18, 940, DateTimeKind.Utc).AddTicks(2698),
+                            CreatedAt = new DateTime(2025, 7, 10, 5, 4, 47, 136, DateTimeKind.Utc).AddTicks(4401),
                             Description = "Electronic devices and accessories",
                             IsActive = true,
                             IsDeleted = false,
                             Name = "Electronics",
-                            UpdatedAt = new DateTime(2025, 7, 9, 19, 0, 18, 940, DateTimeKind.Utc).AddTicks(2701)
+                            UpdatedAt = new DateTime(2025, 7, 10, 5, 4, 47, 136, DateTimeKind.Utc).AddTicks(4404)
                         },
                         new
                         {
                             Id = new Guid("22222222-2222-2222-2222-222222222222"),
-                            CreatedAt = new DateTime(2025, 7, 9, 19, 0, 18, 940, DateTimeKind.Utc).AddTicks(2722),
+                            CreatedAt = new DateTime(2025, 7, 10, 5, 4, 47, 136, DateTimeKind.Utc).AddTicks(4417),
                             Description = "Office equipment and supplies",
                             IsActive = true,
                             IsDeleted = false,
                             Name = "Office Supplies",
-                            UpdatedAt = new DateTime(2025, 7, 9, 19, 0, 18, 940, DateTimeKind.Utc).AddTicks(2723)
+                            UpdatedAt = new DateTime(2025, 7, 10, 5, 4, 47, 136, DateTimeKind.Utc).AddTicks(4418)
                         },
                         new
                         {
                             Id = new Guid("33333333-3333-3333-3333-333333333333"),
-                            CreatedAt = new DateTime(2025, 7, 9, 19, 0, 18, 940, DateTimeKind.Utc).AddTicks(2726),
+                            CreatedAt = new DateTime(2025, 7, 10, 5, 4, 47, 136, DateTimeKind.Utc).AddTicks(4421),
                             Description = "Gaming peripherals and accessories",
                             IsActive = true,
                             IsDeleted = false,
                             Name = "Gaming",
-                            UpdatedAt = new DateTime(2025, 7, 9, 19, 0, 18, 940, DateTimeKind.Utc).AddTicks(2726)
+                            UpdatedAt = new DateTime(2025, 7, 10, 5, 4, 47, 136, DateTimeKind.Utc).AddTicks(4421)
                         });
                 });
 
@@ -413,11 +413,11 @@ namespace InventoryManagement.Infrastructure.Migrations
                             Address = "123 Tech St, Silicon Valley, CA",
                             ContactEmail = "sales@techcorp.com",
                             ContactPhone = "+1-555-0123",
-                            CreatedAt = new DateTime(2025, 7, 9, 19, 0, 18, 940, DateTimeKind.Utc).AddTicks(2731),
+                            CreatedAt = new DateTime(2025, 7, 10, 5, 4, 47, 136, DateTimeKind.Utc).AddTicks(4440),
                             IsActive = true,
                             IsDeleted = false,
                             Name = "TechCorp Ltd",
-                            UpdatedAt = new DateTime(2025, 7, 9, 19, 0, 18, 940, DateTimeKind.Utc).AddTicks(2731)
+                            UpdatedAt = new DateTime(2025, 7, 10, 5, 4, 47, 136, DateTimeKind.Utc).AddTicks(4441)
                         },
                         new
                         {
@@ -425,11 +425,11 @@ namespace InventoryManagement.Infrastructure.Migrations
                             Address = "456 Business Ave, New York, NY",
                             ContactEmail = "orders@officesolutions.com",
                             ContactPhone = "+1-555-0456",
-                            CreatedAt = new DateTime(2025, 7, 9, 19, 0, 18, 940, DateTimeKind.Utc).AddTicks(2748),
+                            CreatedAt = new DateTime(2025, 7, 10, 5, 4, 47, 136, DateTimeKind.Utc).AddTicks(4446),
                             IsActive = true,
                             IsDeleted = false,
                             Name = "Office Solutions Inc",
-                            UpdatedAt = new DateTime(2025, 7, 9, 19, 0, 18, 940, DateTimeKind.Utc).AddTicks(2749)
+                            UpdatedAt = new DateTime(2025, 7, 10, 5, 4, 47, 136, DateTimeKind.Utc).AddTicks(4446)
                         });
                 });
 
@@ -494,41 +494,41 @@ namespace InventoryManagement.Infrastructure.Migrations
                         new
                         {
                             Id = new Guid("66666666-6666-6666-6666-666666666666"),
-                            CreatedAt = new DateTime(2025, 7, 9, 19, 0, 18, 940, DateTimeKind.Utc).AddTicks(2757),
+                            CreatedAt = new DateTime(2025, 7, 10, 5, 4, 47, 136, DateTimeKind.Utc).AddTicks(4452),
                             Email = "admin@inventory.com",
                             FirstName = "Admin",
                             IsActive = true,
                             IsDeleted = false,
                             LastName = "User",
-                            PasswordHash = "$2a$11$TjW8ZUg0p0r9V9aRhsW4f.ATIeiWYiD4rbW58HVK8YQu2Jgp1VsLG",
+                            PasswordHash = "$2a$11$S1CeshrbmZxRCGwfMryyEeyQuNsaqJTQ0EEoDMSu9sbBfCSC2UQR6",
                             Role = 3,
-                            UpdatedAt = new DateTime(2025, 7, 9, 19, 0, 18, 940, DateTimeKind.Utc).AddTicks(2757)
+                            UpdatedAt = new DateTime(2025, 7, 10, 5, 4, 47, 136, DateTimeKind.Utc).AddTicks(4452)
                         },
                         new
                         {
                             Id = new Guid("77777777-7777-7777-7777-777777777777"),
-                            CreatedAt = new DateTime(2025, 7, 9, 19, 0, 19, 69, DateTimeKind.Utc).AddTicks(6425),
+                            CreatedAt = new DateTime(2025, 7, 10, 5, 4, 47, 267, DateTimeKind.Utc).AddTicks(4698),
                             Email = "staff@inventory.com",
                             FirstName = "Staff",
                             IsActive = true,
                             IsDeleted = false,
                             LastName = "User",
-                            PasswordHash = "$2a$11$nnn68J5JNkkhLJIDaxv9fe1lCQ6rPavvAcEfH/qi2HKwf/ebQJUoS",
+                            PasswordHash = "$2a$11$c9RVqbFBidNJrf2eoF3I3O1J/bZmczeDzJMH3iJ/GAg3rdP8FyT.S",
                             Role = 2,
-                            UpdatedAt = new DateTime(2025, 7, 9, 19, 0, 19, 69, DateTimeKind.Utc).AddTicks(6428)
+                            UpdatedAt = new DateTime(2025, 7, 10, 5, 4, 47, 267, DateTimeKind.Utc).AddTicks(4702)
                         },
                         new
                         {
                             Id = new Guid("88888888-8888-8888-8888-888888888888"),
-                            CreatedAt = new DateTime(2025, 7, 9, 19, 0, 19, 202, DateTimeKind.Utc).AddTicks(3179),
+                            CreatedAt = new DateTime(2025, 7, 10, 5, 4, 47, 413, DateTimeKind.Utc).AddTicks(7255),
                             Email = "cust@inventory.com",
                             FirstName = "Customer",
                             IsActive = true,
                             IsDeleted = false,
                             LastName = "User",
-                            PasswordHash = "$2a$11$pPJRZrq0to11O7RhurO3DuOokko48l7OcAYpsaUeEMQDPWi0SgyMC",
+                            PasswordHash = "$2a$11$AQscL6jLvPo3bcbdd7Xdr.s30dCn3j74w.10wSa09XArWN.d3G5t6",
                             Role = 1,
-                            UpdatedAt = new DateTime(2025, 7, 9, 19, 0, 19, 202, DateTimeKind.Utc).AddTicks(3184)
+                            UpdatedAt = new DateTime(2025, 7, 10, 5, 4, 47, 413, DateTimeKind.Utc).AddTicks(7260)
                         });
                 });
 

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import { Order } from '../types/order';
 import { orderService } from '../services/orderService';
 import Card from '../components/common/Card';
@@ -12,13 +13,15 @@ import { useAuth } from '../contexts/AuthContext';
 import { userService } from '../services/userService';
 import { productService } from '../services/productService';
 import { User } from '../types/auth';
+import Pagination from '../components/common/Pagination';
 
 const Orders: React.FC = () => {
   const [orders, setOrders] = useState<Order[]>([]);
+  const location = useLocation();
   const [loading, setLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState('');
   const [statusFilter, setStatusFilter] = useState('');
-  const [selectedOrderId, setSelectedOrderId] = useState<string | null>(null);
+  // const [selectedOrderId, setSelectedOrderId] = useState<string | null>(null);
   const [selectedOrder, setSelectedOrder] = useState<Order | null>(null);
   const [detailLoading, setDetailLoading] = useState(false);
   const [isDetailModalOpen, setIsDetailModalOpen] = useState(false);
@@ -32,6 +35,8 @@ const Orders: React.FC = () => {
   });
   const [customers, setCustomers] = useState<User[]>([]);
   const [products, setProducts] = useState<any[]>([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 10;
 
   const { user } = useAuth();
   const isAdmin = user?.role === 'Admin';
@@ -57,12 +62,22 @@ const Orders: React.FC = () => {
     productService.getProducts().then(setProducts).catch(() => setProducts([]));
   }, [isAdmin, isStaff]);
 
+  // Open Create Order modal if ?add=1 is present in URL
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    if (params.get('add') === '1') {
+      setIsCreateModalOpen(true);
+    }
+  }, [location.search]);
+
   const filteredOrders = orders.filter(order => {
-    const matchesSearch = order.orderNumber.toLowerCase().includes(searchTerm.toLowerCase()) ||
+    const matchesSearch = order.id.toLowerCase().includes(searchTerm.toLowerCase()) ||
                          order.customerName.toLowerCase().includes(searchTerm.toLowerCase());
     const matchesStatus = !statusFilter || order.status === statusFilter;
     return matchesSearch && matchesStatus;
   });
+  const paginatedOrders = filteredOrders.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
+  const totalPages = Math.ceil(filteredOrders.length / itemsPerPage);
 
   const getStatusColor = (status: Order['status']) => {
     switch (status) {
@@ -102,7 +117,7 @@ const Orders: React.FC = () => {
   const handleViewOrder = async (orderId: string) => {
     setDetailLoading(true);
     setIsDetailModalOpen(true);
-    setSelectedOrderId(orderId);
+    // setSelectedOrderId(orderId);
     try {
       const order = await orderService.getOrder(orderId);
       setSelectedOrder(order);
@@ -270,8 +285,17 @@ const Orders: React.FC = () => {
 
       {/* Orders Table */}
       <Card>
-        <Table data={filteredOrders} columns={columns} />
+        <Table data={paginatedOrders} columns={columns} />
       </Card>
+
+      {/* Pagination */}
+      {totalPages > 1 && (
+        <Pagination
+          currentPage={currentPage}
+          totalPages={totalPages}
+          onPageChange={setCurrentPage}
+        />
+      )}
 
       {/* Order Detail Modal */}
       <Modal isOpen={isDetailModalOpen} onClose={() => setIsDetailModalOpen(false)} title="Order Details" size="lg">

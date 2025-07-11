@@ -1,92 +1,133 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Downloads\\project-master\\project-master\\backend\\",
+  "WorkspaceRootPath": "C:\\Users\\parshad.kyada\\Desktop\\project\\backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{466F724B-2FB2-4591-BAFF-CFE154609769}|src\\InventoryManagement.Infrastructure\\InventoryManagement.Infrastructure.csproj|d:\\downloads\\project-master\\project-master\\backend\\src\\inventorymanagement.infrastructure\\migrations\\20250709190019_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{466F724B-2FB2-4591-BAFF-CFE154609769}|src\\InventoryManagement.Infrastructure\\InventoryManagement.Infrastructure.csproj|solutionrelative:src\\inventorymanagement.infrastructure\\migrations\\20250709190019_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2361E60-9F1F-4A3F-AC91-F81B53E2DDF1}|src\\InventoryManagement.Application\\InventoryManagement.Application.csproj|c:\\users\\parshad.kyada\\desktop\\project\\backend\\src\\inventorymanagement.application\\dtos\\products\\lowstockalertdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2361E60-9F1F-4A3F-AC91-F81B53E2DDF1}|src\\InventoryManagement.Application\\InventoryManagement.Application.csproj|solutionrelative:src\\inventorymanagement.application\\dtos\\products\\lowstockalertdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2361E60-9F1F-4A3F-AC91-F81B53E2DDF1}|src\\InventoryManagement.Application\\InventoryManagement.Application.csproj|d:\\downloads\\project-master\\project-master\\backend\\src\\inventorymanagement.application\\handlers\\orders\\getorderbyidhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2361E60-9F1F-4A3F-AC91-F81B53E2DDF1}|src\\InventoryManagement.Application\\InventoryManagement.Application.csproj|solutionrelative:src\\inventorymanagement.application\\handlers\\orders\\getorderbyidhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{09BAC645-6A05-112C-C957-DEC404ACBA73}|src\\InventoryManagement.API\\InventoryManagement.API.csproj|d:\\downloads\\project-master\\project-master\\backend\\src\\inventorymanagement.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{09BAC645-6A05-112C-C957-DEC404ACBA73}|src\\InventoryManagement.API\\InventoryManagement.API.csproj|solutionrelative:src\\inventorymanagement.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{09BAC645-6A05-112C-C957-DEC404ACBA73}|src\\InventoryManagement.API\\InventoryManagement.API.csproj|d:\\downloads\\project-master\\project-master\\backend\\src\\inventorymanagement.api\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{09BAC645-6A05-112C-C957-DEC404ACBA73}|src\\InventoryManagement.API\\InventoryManagement.API.csproj|solutionrelative:src\\inventorymanagement.api\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{09BAC645-6A05-112C-C957-DEC404ACBA73}|src\\InventoryManagement.API\\InventoryManagement.API.csproj|d:\\downloads\\project-master\\project-master\\backend\\src\\inventorymanagement.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{09BAC645-6A05-112C-C957-DEC404ACBA73}|src\\InventoryManagement.API\\InventoryManagement.API.csproj|solutionrelative:src\\inventorymanagement.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{09BAC645-6A05-112C-C957-DEC404ACBA73}|src\\InventoryManagement.API\\InventoryManagement.API.csproj|d:\\downloads\\project-master\\project-master\\backend\\src\\inventorymanagement.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{09BAC645-6A05-112C-C957-DEC404ACBA73}|src\\InventoryManagement.API\\InventoryManagement.API.csproj|c:\\users\\parshad.kyada\\desktop\\project\\backend\\src\\inventorymanagement.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{09BAC645-6A05-112C-C957-DEC404ACBA73}|src\\InventoryManagement.API\\InventoryManagement.API.csproj|solutionrelative:src\\inventorymanagement.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2361E60-9F1F-4A3F-AC91-F81B53E2DDF1}|src\\InventoryManagement.Application\\InventoryManagement.Application.csproj|d:\\downloads\\project-master\\project-master\\backend\\src\\inventorymanagement.application\\handlers\\orders\\getordersqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2361E60-9F1F-4A3F-AC91-F81B53E2DDF1}|src\\InventoryManagement.Application\\InventoryManagement.Application.csproj|solutionrelative:src\\inventorymanagement.application\\handlers\\orders\\getordersqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{466F724B-2FB2-4591-BAFF-CFE154609769}|src\\InventoryManagement.Infrastructure\\InventoryManagement.Infrastructure.csproj|c:\\users\\parshad.kyada\\desktop\\project\\backend\\src\\inventorymanagement.infrastructure\\inventorymanagement.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{466F724B-2FB2-4591-BAFF-CFE154609769}|src\\InventoryManagement.Infrastructure\\InventoryManagement.Infrastructure.csproj|solutionrelative:src\\inventorymanagement.infrastructure\\inventorymanagement.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{466F724B-2FB2-4591-BAFF-CFE154609769}|src\\InventoryManagement.Infrastructure\\InventoryManagement.Infrastructure.csproj|d:\\downloads\\project-master\\project-master\\backend\\src\\inventorymanagement.infrastructure\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{466F724B-2FB2-4591-BAFF-CFE154609769}|src\\InventoryManagement.Infrastructure\\InventoryManagement.Infrastructure.csproj|solutionrelative:src\\inventorymanagement.infrastructure\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2361E60-9F1F-4A3F-AC91-F81B53E2DDF1}|src\\InventoryManagement.Application\\InventoryManagement.Application.csproj|c:\\users\\parshad.kyada\\desktop\\project\\backend\\src\\inventorymanagement.application\\handlers\\products\\updateproducthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2361E60-9F1F-4A3F-AC91-F81B53E2DDF1}|src\\InventoryManagement.Application\\InventoryManagement.Application.csproj|solutionrelative:src\\inventorymanagement.application\\handlers\\products\\updateproducthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2361E60-9F1F-4A3F-AC91-F81B53E2DDF1}|src\\InventoryManagement.Application\\InventoryManagement.Application.csproj|d:\\downloads\\project-master\\project-master\\backend\\src\\inventorymanagement.application\\mappings\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2361E60-9F1F-4A3F-AC91-F81B53E2DDF1}|src\\InventoryManagement.Application\\InventoryManagement.Application.csproj|solutionrelative:src\\inventorymanagement.application\\mappings\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2361E60-9F1F-4A3F-AC91-F81B53E2DDF1}|src\\InventoryManagement.Application\\InventoryManagement.Application.csproj|c:\\users\\parshad.kyada\\desktop\\project\\backend\\src\\inventorymanagement.application\\inventorymanagement.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A2361E60-9F1F-4A3F-AC91-F81B53E2DDF1}|src\\InventoryManagement.Application\\InventoryManagement.Application.csproj|solutionrelative:src\\inventorymanagement.application\\inventorymanagement.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{09BAC645-6A05-112C-C957-DEC404ACBA73}|src\\InventoryManagement.API\\InventoryManagement.API.csproj|d:\\downloads\\project-master\\project-master\\backend\\src\\inventorymanagement.api\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{09BAC645-6A05-112C-C957-DEC404ACBA73}|src\\InventoryManagement.API\\InventoryManagement.API.csproj|solutionrelative:src\\inventorymanagement.api\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2361E60-9F1F-4A3F-AC91-F81B53E2DDF1}|src\\InventoryManagement.Application\\InventoryManagement.Application.csproj|d:\\downloads\\project-master\\project-master\\backend\\src\\inventorymanagement.application\\handlers\\products\\getdashboardstatshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2361E60-9F1F-4A3F-AC91-F81B53E2DDF1}|src\\InventoryManagement.Application\\InventoryManagement.Application.csproj|solutionrelative:src\\inventorymanagement.application\\handlers\\products\\getdashboardstatshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA68F58E-78D1-4AEA-8DCA-4F03BEFA9547}|src\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj|d:\\downloads\\project-master\\project-master\\backend\\src\\inventorymanagement.domain\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA68F58E-78D1-4AEA-8DCA-4F03BEFA9547}|src\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj|solutionrelative:src\\inventorymanagement.domain\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2361E60-9F1F-4A3F-AC91-F81B53E2DDF1}|src\\InventoryManagement.Application\\InventoryManagement.Application.csproj|d:\\downloads\\project-master\\project-master\\backend\\src\\inventorymanagement.application\\handlers\\products\\markalertasreadhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2361E60-9F1F-4A3F-AC91-F81B53E2DDF1}|src\\InventoryManagement.Application\\InventoryManagement.Application.csproj|solutionrelative:src\\inventorymanagement.application\\handlers\\products\\markalertasreadhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2361E60-9F1F-4A3F-AC91-F81B53E2DDF1}|src\\InventoryManagement.Application\\InventoryManagement.Application.csproj|d:\\downloads\\project-master\\project-master\\backend\\src\\inventorymanagement.application\\commands\\products\\markalertasreadcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2361E60-9F1F-4A3F-AC91-F81B53E2DDF1}|src\\InventoryManagement.Application\\InventoryManagement.Application.csproj|solutionrelative:src\\inventorymanagement.application\\commands\\products\\markalertasreadcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2361E60-9F1F-4A3F-AC91-F81B53E2DDF1}|src\\InventoryManagement.Application\\InventoryManagement.Application.csproj|d:\\downloads\\project-master\\project-master\\backend\\src\\inventorymanagement.application\\handlers\\products\\deletesupplierhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2361E60-9F1F-4A3F-AC91-F81B53E2DDF1}|src\\InventoryManagement.Application\\InventoryManagement.Application.csproj|c:\\users\\parshad.kyada\\desktop\\project\\backend\\src\\inventorymanagement.application\\handlers\\products\\deletesupplierhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2361E60-9F1F-4A3F-AC91-F81B53E2DDF1}|src\\InventoryManagement.Application\\InventoryManagement.Application.csproj|solutionrelative:src\\inventorymanagement.application\\handlers\\products\\deletesupplierhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2361E60-9F1F-4A3F-AC91-F81B53E2DDF1}|src\\InventoryManagement.Application\\InventoryManagement.Application.csproj|d:\\downloads\\project-master\\project-master\\backend\\src\\inventorymanagement.application\\commands\\products\\deletesuppliercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2361E60-9F1F-4A3F-AC91-F81B53E2DDF1}|src\\InventoryManagement.Application\\InventoryManagement.Application.csproj|c:\\users\\parshad.kyada\\desktop\\project\\backend\\src\\inventorymanagement.application\\handlers\\products\\createproducthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2361E60-9F1F-4A3F-AC91-F81B53E2DDF1}|src\\InventoryManagement.Application\\InventoryManagement.Application.csproj|solutionrelative:src\\inventorymanagement.application\\handlers\\products\\createproducthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2361E60-9F1F-4A3F-AC91-F81B53E2DDF1}|src\\InventoryManagement.Application\\InventoryManagement.Application.csproj|c:\\users\\parshad.kyada\\desktop\\project\\backend\\src\\inventorymanagement.application\\commands\\products\\updateproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2361E60-9F1F-4A3F-AC91-F81B53E2DDF1}|src\\InventoryManagement.Application\\InventoryManagement.Application.csproj|solutionrelative:src\\inventorymanagement.application\\commands\\products\\updateproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2361E60-9F1F-4A3F-AC91-F81B53E2DDF1}|src\\InventoryManagement.Application\\InventoryManagement.Application.csproj|c:\\users\\parshad.kyada\\desktop\\project\\backend\\src\\inventorymanagement.application\\dtos\\products\\dashboardstatsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2361E60-9F1F-4A3F-AC91-F81B53E2DDF1}|src\\InventoryManagement.Application\\InventoryManagement.Application.csproj|solutionrelative:src\\inventorymanagement.application\\dtos\\products\\dashboardstatsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09BAC645-6A05-112C-C957-DEC404ACBA73}|src\\InventoryManagement.API\\InventoryManagement.API.csproj|c:\\users\\parshad.kyada\\desktop\\project\\backend\\src\\inventorymanagement.api\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09BAC645-6A05-112C-C957-DEC404ACBA73}|src\\InventoryManagement.API\\InventoryManagement.API.csproj|solutionrelative:src\\inventorymanagement.api\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2361E60-9F1F-4A3F-AC91-F81B53E2DDF1}|src\\InventoryManagement.Application\\InventoryManagement.Application.csproj|c:\\users\\parshad.kyada\\desktop\\project\\backend\\src\\inventorymanagement.application\\commands\\products\\markalertasreadcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2361E60-9F1F-4A3F-AC91-F81B53E2DDF1}|src\\InventoryManagement.Application\\InventoryManagement.Application.csproj|solutionrelative:src\\inventorymanagement.application\\commands\\products\\markalertasreadcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA68F58E-78D1-4AEA-8DCA-4F03BEFA9547}|src\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj|c:\\users\\parshad.kyada\\desktop\\project\\backend\\src\\inventorymanagement.domain\\entities\\lowstockalert.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA68F58E-78D1-4AEA-8DCA-4F03BEFA9547}|src\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj|solutionrelative:src\\inventorymanagement.domain\\entities\\lowstockalert.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\parshad.kyada\\AppData\\Local\\Temp\\tmpBFC2.tmp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2361E60-9F1F-4A3F-AC91-F81B53E2DDF1}|src\\InventoryManagement.Application\\InventoryManagement.Application.csproj|c:\\users\\parshad.kyada\\desktop\\project\\backend\\src\\inventorymanagement.application\\handlers\\products\\markalertasreadhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2361E60-9F1F-4A3F-AC91-F81B53E2DDF1}|src\\InventoryManagement.Application\\InventoryManagement.Application.csproj|solutionrelative:src\\inventorymanagement.application\\handlers\\products\\markalertasreadhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2361E60-9F1F-4A3F-AC91-F81B53E2DDF1}|src\\InventoryManagement.Application\\InventoryManagement.Application.csproj|c:\\users\\parshad.kyada\\desktop\\project\\backend\\src\\inventorymanagement.application\\handlers\\products\\getlowstockalertshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2361E60-9F1F-4A3F-AC91-F81B53E2DDF1}|src\\InventoryManagement.Application\\InventoryManagement.Application.csproj|solutionrelative:src\\inventorymanagement.application\\handlers\\products\\getlowstockalertshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2361E60-9F1F-4A3F-AC91-F81B53E2DDF1}|src\\InventoryManagement.Application\\InventoryManagement.Application.csproj|c:\\users\\parshad.kyada\\desktop\\project\\backend\\src\\inventorymanagement.application\\handlers\\products\\getdashboardstatshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2361E60-9F1F-4A3F-AC91-F81B53E2DDF1}|src\\InventoryManagement.Application\\InventoryManagement.Application.csproj|solutionrelative:src\\inventorymanagement.application\\handlers\\products\\getdashboardstatshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{466F724B-2FB2-4591-BAFF-CFE154609769}|src\\InventoryManagement.Infrastructure\\InventoryManagement.Infrastructure.csproj|c:\\users\\parshad.kyada\\desktop\\project\\backend\\src\\inventorymanagement.infrastructure\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{466F724B-2FB2-4591-BAFF-CFE154609769}|src\\InventoryManagement.Infrastructure\\InventoryManagement.Infrastructure.csproj|solutionrelative:src\\inventorymanagement.infrastructure\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2361E60-9F1F-4A3F-AC91-F81B53E2DDF1}|src\\InventoryManagement.Application\\InventoryManagement.Application.csproj|c:\\users\\parshad.kyada\\desktop\\project\\backend\\src\\inventorymanagement.application\\mappings\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2361E60-9F1F-4A3F-AC91-F81B53E2DDF1}|src\\InventoryManagement.Application\\InventoryManagement.Application.csproj|solutionrelative:src\\inventorymanagement.application\\mappings\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09BAC645-6A05-112C-C957-DEC404ACBA73}|src\\InventoryManagement.API\\InventoryManagement.API.csproj|c:\\users\\parshad.kyada\\desktop\\project\\backend\\src\\inventorymanagement.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{09BAC645-6A05-112C-C957-DEC404ACBA73}|src\\InventoryManagement.API\\InventoryManagement.API.csproj|solutionrelative:src\\inventorymanagement.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2361E60-9F1F-4A3F-AC91-F81B53E2DDF1}|src\\InventoryManagement.Application\\InventoryManagement.Application.csproj|c:\\users\\parshad.kyada\\desktop\\project\\backend\\src\\inventorymanagement.application\\handlers\\orders\\getorderbyidhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2361E60-9F1F-4A3F-AC91-F81B53E2DDF1}|src\\InventoryManagement.Application\\InventoryManagement.Application.csproj|solutionrelative:src\\inventorymanagement.application\\handlers\\orders\\getorderbyidhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09BAC645-6A05-112C-C957-DEC404ACBA73}|src\\InventoryManagement.API\\InventoryManagement.API.csproj|c:\\users\\parshad.kyada\\desktop\\project\\backend\\src\\inventorymanagement.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09BAC645-6A05-112C-C957-DEC404ACBA73}|src\\InventoryManagement.API\\InventoryManagement.API.csproj|solutionrelative:src\\inventorymanagement.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09BAC645-6A05-112C-C957-DEC404ACBA73}|src\\InventoryManagement.API\\InventoryManagement.API.csproj|c:\\users\\parshad.kyada\\desktop\\project\\backend\\src\\inventorymanagement.api\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09BAC645-6A05-112C-C957-DEC404ACBA73}|src\\InventoryManagement.API\\InventoryManagement.API.csproj|solutionrelative:src\\inventorymanagement.api\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2361E60-9F1F-4A3F-AC91-F81B53E2DDF1}|src\\InventoryManagement.Application\\InventoryManagement.Application.csproj|c:\\users\\parshad.kyada\\desktop\\project\\backend\\src\\inventorymanagement.application\\handlers\\orders\\getordersqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2361E60-9F1F-4A3F-AC91-F81B53E2DDF1}|src\\InventoryManagement.Application\\InventoryManagement.Application.csproj|solutionrelative:src\\inventorymanagement.application\\handlers\\orders\\getordersqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA68F58E-78D1-4AEA-8DCA-4F03BEFA9547}|src\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj|c:\\users\\parshad.kyada\\desktop\\project\\backend\\src\\inventorymanagement.domain\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA68F58E-78D1-4AEA-8DCA-4F03BEFA9547}|src\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj|solutionrelative:src\\inventorymanagement.domain\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2361E60-9F1F-4A3F-AC91-F81B53E2DDF1}|src\\InventoryManagement.Application\\InventoryManagement.Application.csproj|c:\\users\\parshad.kyada\\desktop\\project\\backend\\src\\inventorymanagement.application\\commands\\products\\deletesuppliercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2361E60-9F1F-4A3F-AC91-F81B53E2DDF1}|src\\InventoryManagement.Application\\InventoryManagement.Application.csproj|solutionrelative:src\\inventorymanagement.application\\commands\\products\\deletesuppliercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2361E60-9F1F-4A3F-AC91-F81B53E2DDF1}|src\\InventoryManagement.Application\\InventoryManagement.Application.csproj|d:\\downloads\\project-master\\project-master\\backend\\src\\inventorymanagement.application\\commands\\products\\deletecategorycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2361E60-9F1F-4A3F-AC91-F81B53E2DDF1}|src\\InventoryManagement.Application\\InventoryManagement.Application.csproj|c:\\users\\parshad.kyada\\desktop\\project\\backend\\src\\inventorymanagement.application\\commands\\products\\deletecategorycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2361E60-9F1F-4A3F-AC91-F81B53E2DDF1}|src\\InventoryManagement.Application\\InventoryManagement.Application.csproj|solutionrelative:src\\inventorymanagement.application\\commands\\products\\deletecategorycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2361E60-9F1F-4A3F-AC91-F81B53E2DDF1}|src\\InventoryManagement.Application\\InventoryManagement.Application.csproj|d:\\downloads\\project-master\\project-master\\backend\\src\\inventorymanagement.application\\handlers\\products\\deletecategoryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2361E60-9F1F-4A3F-AC91-F81B53E2DDF1}|src\\InventoryManagement.Application\\InventoryManagement.Application.csproj|c:\\users\\parshad.kyada\\desktop\\project\\backend\\src\\inventorymanagement.application\\handlers\\products\\deletecategoryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2361E60-9F1F-4A3F-AC91-F81B53E2DDF1}|src\\InventoryManagement.Application\\InventoryManagement.Application.csproj|solutionrelative:src\\inventorymanagement.application\\handlers\\products\\deletecategoryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{09BAC645-6A05-112C-C957-DEC404ACBA73}|src\\InventoryManagement.API\\InventoryManagement.API.csproj|d:\\downloads\\project-master\\project-master\\backend\\src\\inventorymanagement.api\\controllers\\supplierscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{09BAC645-6A05-112C-C957-DEC404ACBA73}|src\\InventoryManagement.API\\InventoryManagement.API.csproj|c:\\users\\parshad.kyada\\desktop\\project\\backend\\src\\inventorymanagement.api\\controllers\\supplierscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{09BAC645-6A05-112C-C957-DEC404ACBA73}|src\\InventoryManagement.API\\InventoryManagement.API.csproj|solutionrelative:src\\inventorymanagement.api\\controllers\\supplierscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{09BAC645-6A05-112C-C957-DEC404ACBA73}|src\\InventoryManagement.API\\InventoryManagement.API.csproj|d:\\downloads\\project-master\\project-master\\backend\\src\\inventorymanagement.api\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{09BAC645-6A05-112C-C957-DEC404ACBA73}|src\\InventoryManagement.API\\InventoryManagement.API.csproj|c:\\users\\parshad.kyada\\desktop\\project\\backend\\src\\inventorymanagement.api\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{09BAC645-6A05-112C-C957-DEC404ACBA73}|src\\InventoryManagement.API\\InventoryManagement.API.csproj|solutionrelative:src\\inventorymanagement.api\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\parshad.kyada\\Desktop\\project\\backend\\src\\InventoryManagement.Infrastructure\\Migrations\\20250708160426_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\parshad.kyada\\Desktop\\project\\backend\\src\\InventoryManagement.Infrastructure\\Migrations\\20250708160426_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\InventoryManagement.Infrastructure\\Migrations\\20250708160426_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\parshad.kyada\\Desktop\\project\\backend\\src\\InventoryManagement.Infrastructure\\Migrations\\20250708155138_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\parshad.kyada\\Desktop\\project\\backend\\src\\InventoryManagement.Infrastructure\\Migrations\\20250708155138_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\InventoryManagement.Infrastructure\\Migrations\\20250708155138_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{466F724B-2FB2-4591-BAFF-CFE154609769}|src\\InventoryManagement.Infrastructure\\InventoryManagement.Infrastructure.csproj|c:\\users\\parshad.kyada\\desktop\\project\\backend\\src\\inventorymanagement.infrastructure\\migrations\\20250710050449_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{466F724B-2FB2-4591-BAFF-CFE154609769}|src\\InventoryManagement.Infrastructure\\InventoryManagement.Infrastructure.csproj|solutionrelative:src\\inventorymanagement.infrastructure\\migrations\\20250710050449_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -96,214 +137,89 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "20250709190019_init.cs",
-              "DocumentMoniker": "D:\\Downloads\\project-master\\project-master\\backend\\src\\InventoryManagement.Infrastructure\\Migrations\\20250709190019_init.cs",
-              "RelativeDocumentMoniker": "src\\InventoryManagement.Infrastructure\\Migrations\\20250709190019_init.cs",
-              "ToolTip": "D:\\Downloads\\project-master\\project-master\\backend\\src\\InventoryManagement.Infrastructure\\Migrations\\20250709190019_init.cs",
-              "RelativeToolTip": "src\\InventoryManagement.Infrastructure\\Migrations\\20250709190019_init.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-09T19:00:20.361Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProductsController.cs",
-              "DocumentMoniker": "D:\\Downloads\\project-master\\project-master\\backend\\src\\InventoryManagement.API\\Controllers\\ProductsController.cs",
-              "RelativeDocumentMoniker": "src\\InventoryManagement.API\\Controllers\\ProductsController.cs",
-              "ToolTip": "D:\\Downloads\\project-master\\project-master\\backend\\src\\InventoryManagement.API\\Controllers\\ProductsController.cs",
-              "RelativeToolTip": "src\\InventoryManagement.API\\Controllers\\ProductsController.cs",
-              "ViewState": "AgIAAFAAAAAAAAAAAAAMwF8AAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-09T17:40:30.175Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "GetOrderByIdHandler.cs",
-              "DocumentMoniker": "D:\\Downloads\\project-master\\project-master\\backend\\src\\InventoryManagement.Application\\Handlers\\Orders\\GetOrderByIdHandler.cs",
-              "RelativeDocumentMoniker": "src\\InventoryManagement.Application\\Handlers\\Orders\\GetOrderByIdHandler.cs",
-              "ToolTip": "D:\\Downloads\\project-master\\project-master\\backend\\src\\InventoryManagement.Application\\Handlers\\Orders\\GetOrderByIdHandler.cs",
-              "RelativeToolTip": "src\\InventoryManagement.Application\\Handlers\\Orders\\GetOrderByIdHandler.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAD4vyIAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-09T17:39:01.722Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Downloads\\project-master\\project-master\\backend\\src\\InventoryManagement.API\\appsettings.json",
-              "RelativeDocumentMoniker": "src\\InventoryManagement.API\\appsettings.json",
-              "ToolTip": "D:\\Downloads\\project-master\\project-master\\backend\\src\\InventoryManagement.API\\appsettings.json",
-              "RelativeToolTip": "src\\InventoryManagement.API\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-07-09T17:19:31.873Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "D:\\Downloads\\project-master\\project-master\\backend\\src\\InventoryManagement.Infrastructure\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "src\\InventoryManagement.Infrastructure\\Data\\ApplicationDbContext.cs",
-              "ToolTip": "D:\\Downloads\\project-master\\project-master\\backend\\src\\InventoryManagement.Infrastructure\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "src\\InventoryManagement.Infrastructure\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAALQAAAAAAAAAAAAYwMUAAABQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-09T07:09:41.523Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "MarkAlertAsReadHandler.cs",
-              "DocumentMoniker": "D:\\Downloads\\project-master\\project-master\\backend\\src\\InventoryManagement.Application\\Handlers\\Products\\MarkAlertAsReadHandler.cs",
-              "RelativeDocumentMoniker": "src\\InventoryManagement.Application\\Handlers\\Products\\MarkAlertAsReadHandler.cs",
-              "ToolTip": "D:\\Downloads\\project-master\\project-master\\backend\\src\\InventoryManagement.Application\\Handlers\\Products\\MarkAlertAsReadHandler.cs",
-              "RelativeToolTip": "src\\InventoryManagement.Application\\Handlers\\Products\\MarkAlertAsReadHandler.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAowA4AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-09T05:12:27.689Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "OrdersController.cs",
-              "DocumentMoniker": "D:\\Downloads\\project-master\\project-master\\backend\\src\\InventoryManagement.API\\Controllers\\OrdersController.cs",
-              "RelativeDocumentMoniker": "src\\InventoryManagement.API\\Controllers\\OrdersController.cs",
-              "ToolTip": "D:\\Downloads\\project-master\\project-master\\backend\\src\\InventoryManagement.API\\Controllers\\OrdersController.cs",
-              "RelativeToolTip": "src\\InventoryManagement.API\\Controllers\\OrdersController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAAtAAAAAAAAAA==",
+              "Title": "UpdateProductHandler.cs",
+              "DocumentMoniker": "C:\\Users\\parshad.kyada\\Desktop\\project\\backend\\src\\InventoryManagement.Application\\Handlers\\Products\\UpdateProductHandler.cs",
+              "RelativeDocumentMoniker": "src\\InventoryManagement.Application\\Handlers\\Products\\UpdateProductHandler.cs",
+              "ToolTip": "C:\\Users\\parshad.kyada\\Desktop\\project\\backend\\src\\InventoryManagement.Application\\Handlers\\Products\\UpdateProductHandler.cs",
+              "RelativeToolTip": "src\\InventoryManagement.Application\\Handlers\\Products\\UpdateProductHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-09T05:12:22.957Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-10T06:18:36.589Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "GetOrdersQueryHandler.cs",
-              "DocumentMoniker": "D:\\Downloads\\project-master\\project-master\\backend\\src\\InventoryManagement.Application\\Handlers\\Orders\\GetOrdersQueryHandler.cs",
-              "RelativeDocumentMoniker": "src\\InventoryManagement.Application\\Handlers\\Orders\\GetOrdersQueryHandler.cs",
-              "ToolTip": "D:\\Downloads\\project-master\\project-master\\backend\\src\\InventoryManagement.Application\\Handlers\\Orders\\GetOrdersQueryHandler.cs",
-              "RelativeToolTip": "src\\InventoryManagement.Application\\Handlers\\Orders\\GetOrdersQueryHandler.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAAwB8AAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-09T08:05:18.311Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "DashboardController.cs",
-              "DocumentMoniker": "D:\\Downloads\\project-master\\project-master\\backend\\src\\InventoryManagement.API\\Controllers\\DashboardController.cs",
-              "RelativeDocumentMoniker": "src\\InventoryManagement.API\\Controllers\\DashboardController.cs",
-              "ToolTip": "D:\\Downloads\\project-master\\project-master\\backend\\src\\InventoryManagement.API\\Controllers\\DashboardController.cs",
-              "RelativeToolTip": "src\\InventoryManagement.API\\Controllers\\DashboardController.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAWwCMAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-09T05:12:25.567Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Downloads\\project-master\\project-master\\backend\\src\\InventoryManagement.API\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\parshad.kyada\\Desktop\\project\\backend\\src\\InventoryManagement.API\\Program.cs",
               "RelativeDocumentMoniker": "src\\InventoryManagement.API\\Program.cs",
-              "ToolTip": "D:\\Downloads\\project-master\\project-master\\backend\\src\\InventoryManagement.API\\Program.cs",
+              "ToolTip": "C:\\Users\\parshad.kyada\\Desktop\\project\\backend\\src\\InventoryManagement.API\\Program.cs",
               "RelativeToolTip": "src\\InventoryManagement.API\\Program.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAcwGkAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAADgAAAAAAAAAAAAkwD0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-08T16:25:40.031Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "GetDashboardStatsHandler.cs",
-              "DocumentMoniker": "D:\\Downloads\\project-master\\project-master\\backend\\src\\InventoryManagement.Application\\Handlers\\Products\\GetDashboardStatsHandler.cs",
-              "RelativeDocumentMoniker": "src\\InventoryManagement.Application\\Handlers\\Products\\GetDashboardStatsHandler.cs",
-              "ToolTip": "D:\\Downloads\\project-master\\project-master\\backend\\src\\InventoryManagement.Application\\Handlers\\Products\\GetDashboardStatsHandler.cs",
-              "RelativeToolTip": "src\\InventoryManagement.Application\\Handlers\\Products\\GetDashboardStatsHandler.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAYwDsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-09T05:24:46.753Z"
+              "DocumentIndex": 4,
+              "Title": "InventoryManagement.Application.csproj",
+              "DocumentMoniker": "C:\\Users\\parshad.kyada\\Desktop\\project\\backend\\src\\InventoryManagement.Application\\InventoryManagement.Application.csproj",
+              "RelativeDocumentMoniker": "src\\InventoryManagement.Application\\InventoryManagement.Application.csproj",
+              "ToolTip": "C:\\Users\\parshad.kyada\\Desktop\\project\\backend\\src\\InventoryManagement.Application\\InventoryManagement.Application.csproj",
+              "RelativeToolTip": "src\\InventoryManagement.Application\\InventoryManagement.Application.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-10T09:29:08.481Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "MappingProfile.cs",
-              "DocumentMoniker": "D:\\Downloads\\project-master\\project-master\\backend\\src\\InventoryManagement.Application\\Mappings\\MappingProfile.cs",
-              "RelativeDocumentMoniker": "src\\InventoryManagement.Application\\Mappings\\MappingProfile.cs",
-              "ToolTip": "D:\\Downloads\\project-master\\project-master\\backend\\src\\InventoryManagement.Application\\Mappings\\MappingProfile.cs",
-              "RelativeToolTip": "src\\InventoryManagement.Application\\Mappings\\MappingProfile.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAowEMAAAAjAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "LowStockAlertDto.cs",
+              "DocumentMoniker": "C:\\Users\\parshad.kyada\\Desktop\\project\\backend\\src\\InventoryManagement.Application\\DTOs\\Products\\LowStockAlertDto.cs",
+              "RelativeDocumentMoniker": "src\\InventoryManagement.Application\\DTOs\\Products\\LowStockAlertDto.cs",
+              "ToolTip": "C:\\Users\\parshad.kyada\\Desktop\\project\\backend\\src\\InventoryManagement.Application\\DTOs\\Products\\LowStockAlertDto.cs",
+              "RelativeToolTip": "src\\InventoryManagement.Application\\DTOs\\Products\\LowStockAlertDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-09T05:10:52.848Z"
+              "WhenOpened": "2025-07-10T09:31:31.869Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "DeleteSupplierCommand.cs",
-              "DocumentMoniker": "D:\\Downloads\\project-master\\project-master\\backend\\src\\InventoryManagement.Application\\Commands\\Products\\DeleteSupplierCommand.cs",
-              "RelativeDocumentMoniker": "src\\InventoryManagement.Application\\Commands\\Products\\DeleteSupplierCommand.cs",
-              "ToolTip": "D:\\Downloads\\project-master\\project-master\\backend\\src\\InventoryManagement.Application\\Commands\\Products\\DeleteSupplierCommand.cs",
-              "RelativeToolTip": "src\\InventoryManagement.Application\\Commands\\Products\\DeleteSupplierCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-09T05:16:29.061Z"
+              "DocumentIndex": 2,
+              "Title": "InventoryManagement.Infrastructure.csproj",
+              "DocumentMoniker": "C:\\Users\\parshad.kyada\\Desktop\\project\\backend\\src\\InventoryManagement.Infrastructure\\InventoryManagement.Infrastructure.csproj",
+              "RelativeDocumentMoniker": "src\\InventoryManagement.Infrastructure\\InventoryManagement.Infrastructure.csproj",
+              "ToolTip": "C:\\Users\\parshad.kyada\\Desktop\\project\\backend\\src\\InventoryManagement.Infrastructure\\InventoryManagement.Infrastructure.csproj",
+              "RelativeToolTip": "src\\InventoryManagement.Infrastructure\\InventoryManagement.Infrastructure.csproj",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-10T09:28:32.588Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "MarkAlertAsReadCommand.cs",
-              "DocumentMoniker": "D:\\Downloads\\project-master\\project-master\\backend\\src\\InventoryManagement.Application\\Commands\\Products\\MarkAlertAsReadCommand.cs",
-              "RelativeDocumentMoniker": "src\\InventoryManagement.Application\\Commands\\Products\\MarkAlertAsReadCommand.cs",
-              "ToolTip": "D:\\Downloads\\project-master\\project-master\\backend\\src\\InventoryManagement.Application\\Commands\\Products\\MarkAlertAsReadCommand.cs",
-              "RelativeToolTip": "src\\InventoryManagement.Application\\Commands\\Products\\MarkAlertAsReadCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-09T05:17:29.296Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Order.cs",
-              "DocumentMoniker": "D:\\Downloads\\project-master\\project-master\\backend\\src\\InventoryManagement.Domain\\Entities\\Order.cs",
-              "RelativeDocumentMoniker": "src\\InventoryManagement.Domain\\Entities\\Order.cs",
-              "ToolTip": "D:\\Downloads\\project-master\\project-master\\backend\\src\\InventoryManagement.Domain\\Entities\\Order.cs",
-              "RelativeToolTip": "src\\InventoryManagement.Domain\\Entities\\Order.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAwwBAAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-09T05:27:56.202Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "DeleteCategoryCommand.cs",
-              "DocumentMoniker": "D:\\Downloads\\project-master\\project-master\\backend\\src\\InventoryManagement.Application\\Commands\\Products\\DeleteCategoryCommand.cs",
-              "RelativeDocumentMoniker": "src\\InventoryManagement.Application\\Commands\\Products\\DeleteCategoryCommand.cs",
-              "ToolTip": "D:\\Downloads\\project-master\\project-master\\backend\\src\\InventoryManagement.Application\\Commands\\Products\\DeleteCategoryCommand.cs",
-              "RelativeToolTip": "src\\InventoryManagement.Application\\Commands\\Products\\DeleteCategoryCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-09T05:14:24.552Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 5,
               "Title": "DeleteSupplierHandler.cs",
-              "DocumentMoniker": "D:\\Downloads\\project-master\\project-master\\backend\\src\\InventoryManagement.Application\\Handlers\\Products\\DeleteSupplierHandler.cs",
+              "DocumentMoniker": "C:\\Users\\parshad.kyada\\Desktop\\project\\backend\\src\\InventoryManagement.Application\\Handlers\\Products\\DeleteSupplierHandler.cs",
               "RelativeDocumentMoniker": "src\\InventoryManagement.Application\\Handlers\\Products\\DeleteSupplierHandler.cs",
-              "ToolTip": "D:\\Downloads\\project-master\\project-master\\backend\\src\\InventoryManagement.Application\\Handlers\\Products\\DeleteSupplierHandler.cs",
+              "ToolTip": "C:\\Users\\parshad.kyada\\Desktop\\project\\backend\\src\\InventoryManagement.Application\\Handlers\\Products\\DeleteSupplierHandler.cs",
               "RelativeToolTip": "src\\InventoryManagement.Application\\Handlers\\Products\\DeleteSupplierHandler.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -311,11 +227,263 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UpdateProductCommand.cs",
+              "DocumentMoniker": "C:\\Users\\parshad.kyada\\Desktop\\project\\backend\\src\\InventoryManagement.Application\\Commands\\Products\\UpdateProductCommand.cs",
+              "RelativeDocumentMoniker": "src\\InventoryManagement.Application\\Commands\\Products\\UpdateProductCommand.cs",
+              "ToolTip": "C:\\Users\\parshad.kyada\\Desktop\\project\\backend\\src\\InventoryManagement.Application\\Commands\\Products\\UpdateProductCommand.cs",
+              "RelativeToolTip": "src\\InventoryManagement.Application\\Commands\\Products\\UpdateProductCommand.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAIA1wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T11:10:16.183Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MarkAlertAsReadCommand.cs",
+              "DocumentMoniker": "C:\\Users\\parshad.kyada\\Desktop\\project\\backend\\src\\InventoryManagement.Application\\Commands\\Products\\MarkAlertAsReadCommand.cs",
+              "RelativeDocumentMoniker": "src\\InventoryManagement.Application\\Commands\\Products\\MarkAlertAsReadCommand.cs",
+              "ToolTip": "C:\\Users\\parshad.kyada\\Desktop\\project\\backend\\src\\InventoryManagement.Application\\Commands\\Products\\MarkAlertAsReadCommand.cs",
+              "RelativeToolTip": "src\\InventoryManagement.Application\\Commands\\Products\\MarkAlertAsReadCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T05:17:29.296Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CreateProductHandler.cs",
+              "DocumentMoniker": "C:\\Users\\parshad.kyada\\Desktop\\project\\backend\\src\\InventoryManagement.Application\\Handlers\\Products\\CreateProductHandler.cs",
+              "RelativeDocumentMoniker": "src\\InventoryManagement.Application\\Handlers\\Products\\CreateProductHandler.cs",
+              "ToolTip": "C:\\Users\\parshad.kyada\\Desktop\\project\\backend\\src\\InventoryManagement.Application\\Handlers\\Products\\CreateProductHandler.cs",
+              "RelativeToolTip": "src\\InventoryManagement.Application\\Handlers\\Products\\CreateProductHandler.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAkwD4AAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T06:37:27.563Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "C:\\Users\\parshad.kyada\\Desktop\\project\\backend\\src\\InventoryManagement.API\\Controllers\\DashboardController.cs",
+              "RelativeDocumentMoniker": "src\\InventoryManagement.API\\Controllers\\DashboardController.cs",
+              "ToolTip": "C:\\Users\\parshad.kyada\\Desktop\\project\\backend\\src\\InventoryManagement.API\\Controllers\\DashboardController.cs",
+              "RelativeToolTip": "src\\InventoryManagement.API\\Controllers\\DashboardController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAIA3wA4AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T09:29:34.009Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DashboardStatsDto.cs",
+              "DocumentMoniker": "C:\\Users\\parshad.kyada\\Desktop\\project\\backend\\src\\InventoryManagement.Application\\DTOs\\Products\\DashboardStatsDto.cs",
+              "RelativeDocumentMoniker": "src\\InventoryManagement.Application\\DTOs\\Products\\DashboardStatsDto.cs",
+              "ToolTip": "C:\\Users\\parshad.kyada\\Desktop\\project\\backend\\src\\InventoryManagement.Application\\DTOs\\Products\\DashboardStatsDto.cs",
+              "RelativeToolTip": "src\\InventoryManagement.Application\\DTOs\\Products\\DashboardStatsDto.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAcwAYAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T09:32:07.202Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "tmpBFC2.tmp.cs",
+              "DocumentMoniker": "C:\\Users\\parshad.kyada\\AppData\\Local\\Temp\\tmpBFC2.tmp.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\tmpBFC2.tmp.cs",
+              "ToolTip": "C:\\Users\\parshad.kyada\\AppData\\Local\\Temp\\tmpBFC2.tmp.cs",
+              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\tmpBFC2.tmp.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAwwDAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T09:19:48.71Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "GetLowStockAlertsHandler.cs",
+              "DocumentMoniker": "C:\\Users\\parshad.kyada\\Desktop\\project\\backend\\src\\InventoryManagement.Application\\Handlers\\Products\\GetLowStockAlertsHandler.cs",
+              "RelativeDocumentMoniker": "src\\InventoryManagement.Application\\Handlers\\Products\\GetLowStockAlertsHandler.cs",
+              "ToolTip": "C:\\Users\\parshad.kyada\\Desktop\\project\\backend\\src\\InventoryManagement.Application\\Handlers\\Products\\GetLowStockAlertsHandler.cs",
+              "RelativeToolTip": "src\\InventoryManagement.Application\\Handlers\\Products\\GetLowStockAlertsHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T09:08:43.336Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "MarkAlertAsReadHandler.cs",
+              "DocumentMoniker": "C:\\Users\\parshad.kyada\\Desktop\\project\\backend\\src\\InventoryManagement.Application\\Handlers\\Products\\MarkAlertAsReadHandler.cs",
+              "RelativeDocumentMoniker": "src\\InventoryManagement.Application\\Handlers\\Products\\MarkAlertAsReadHandler.cs",
+              "ToolTip": "C:\\Users\\parshad.kyada\\Desktop\\project\\backend\\src\\InventoryManagement.Application\\Handlers\\Products\\MarkAlertAsReadHandler.cs",
+              "RelativeToolTip": "src\\InventoryManagement.Application\\Handlers\\Products\\MarkAlertAsReadHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T05:12:27.689Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "LowStockAlert.cs",
+              "DocumentMoniker": "C:\\Users\\parshad.kyada\\Desktop\\project\\backend\\src\\InventoryManagement.Domain\\Entities\\LowStockAlert.cs",
+              "RelativeDocumentMoniker": "src\\InventoryManagement.Domain\\Entities\\LowStockAlert.cs",
+              "ToolTip": "C:\\Users\\parshad.kyada\\Desktop\\project\\backend\\src\\InventoryManagement.Domain\\Entities\\LowStockAlert.cs",
+              "RelativeToolTip": "src\\InventoryManagement.Domain\\Entities\\LowStockAlert.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAYAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T09:09:13.443Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "GetDashboardStatsHandler.cs",
+              "DocumentMoniker": "C:\\Users\\parshad.kyada\\Desktop\\project\\backend\\src\\InventoryManagement.Application\\Handlers\\Products\\GetDashboardStatsHandler.cs",
+              "RelativeDocumentMoniker": "src\\InventoryManagement.Application\\Handlers\\Products\\GetDashboardStatsHandler.cs",
+              "ToolTip": "C:\\Users\\parshad.kyada\\Desktop\\project\\backend\\src\\InventoryManagement.Application\\Handlers\\Products\\GetDashboardStatsHandler.cs",
+              "RelativeToolTip": "src\\InventoryManagement.Application\\Handlers\\Products\\GetDashboardStatsHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T05:24:46.753Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\parshad.kyada\\Desktop\\project\\backend\\src\\InventoryManagement.Infrastructure\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "src\\InventoryManagement.Infrastructure\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\parshad.kyada\\Desktop\\project\\backend\\src\\InventoryManagement.Infrastructure\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "src\\InventoryManagement.Infrastructure\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAIAxwMUAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T07:09:41.523Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\parshad.kyada\\Desktop\\project\\backend\\src\\InventoryManagement.API\\appsettings.json",
+              "RelativeDocumentMoniker": "src\\InventoryManagement.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\parshad.kyada\\Desktop\\project\\backend\\src\\InventoryManagement.API\\appsettings.json",
+              "RelativeToolTip": "src\\InventoryManagement.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAD7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-09T17:19:31.873Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "GetOrderByIdHandler.cs",
+              "DocumentMoniker": "C:\\Users\\parshad.kyada\\Desktop\\project\\backend\\src\\InventoryManagement.Application\\Handlers\\Orders\\GetOrderByIdHandler.cs",
+              "RelativeDocumentMoniker": "src\\InventoryManagement.Application\\Handlers\\Orders\\GetOrderByIdHandler.cs",
+              "ToolTip": "C:\\Users\\parshad.kyada\\Desktop\\project\\backend\\src\\InventoryManagement.Application\\Handlers\\Orders\\GetOrderByIdHandler.cs",
+              "RelativeToolTip": "src\\InventoryManagement.Application\\Handlers\\Orders\\GetOrderByIdHandler.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAD4vyIAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T17:39:01.722Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "20250710050449_init.cs",
+              "DocumentMoniker": "C:\\Users\\parshad.kyada\\Desktop\\project\\backend\\src\\InventoryManagement.Infrastructure\\Migrations\\20250710050449_init.cs",
+              "RelativeDocumentMoniker": "src\\InventoryManagement.Infrastructure\\Migrations\\20250710050449_init.cs",
+              "ToolTip": "C:\\Users\\parshad.kyada\\Desktop\\project\\backend\\src\\InventoryManagement.Infrastructure\\Migrations\\20250710050449_init.cs",
+              "RelativeToolTip": "src\\InventoryManagement.Infrastructure\\Migrations\\20250710050449_init.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T05:04:49.861Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 17,
+              "Title": "MappingProfile.cs",
+              "DocumentMoniker": "C:\\Users\\parshad.kyada\\Desktop\\project\\backend\\src\\InventoryManagement.Application\\Mappings\\MappingProfile.cs",
+              "RelativeDocumentMoniker": "src\\InventoryManagement.Application\\Mappings\\MappingProfile.cs",
+              "ToolTip": "C:\\Users\\parshad.kyada\\Desktop\\project\\backend\\src\\InventoryManagement.Application\\Mappings\\MappingProfile.cs",
+              "RelativeToolTip": "src\\InventoryManagement.Application\\Mappings\\MappingProfile.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAgwEMAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T05:10:52.848Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\Users\\parshad.kyada\\Desktop\\project\\backend\\src\\InventoryManagement.API\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "src\\InventoryManagement.API\\Controllers\\ProductsController.cs",
+              "ToolTip": "C:\\Users\\parshad.kyada\\Desktop\\project\\backend\\src\\InventoryManagement.API\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "src\\InventoryManagement.API\\Controllers\\ProductsController.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAMwF8AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T17:40:30.175Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "C:\\Users\\parshad.kyada\\Desktop\\project\\backend\\src\\InventoryManagement.API\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "src\\InventoryManagement.API\\Controllers\\OrdersController.cs",
+              "ToolTip": "C:\\Users\\parshad.kyada\\Desktop\\project\\backend\\src\\InventoryManagement.API\\Controllers\\OrdersController.cs",
+              "RelativeToolTip": "src\\InventoryManagement.API\\Controllers\\OrdersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T05:12:22.957Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "GetOrdersQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\parshad.kyada\\Desktop\\project\\backend\\src\\InventoryManagement.Application\\Handlers\\Orders\\GetOrdersQueryHandler.cs",
+              "RelativeDocumentMoniker": "src\\InventoryManagement.Application\\Handlers\\Orders\\GetOrdersQueryHandler.cs",
+              "ToolTip": "C:\\Users\\parshad.kyada\\Desktop\\project\\backend\\src\\InventoryManagement.Application\\Handlers\\Orders\\GetOrdersQueryHandler.cs",
+              "RelativeToolTip": "src\\InventoryManagement.Application\\Handlers\\Orders\\GetOrdersQueryHandler.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAwB8AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T08:05:18.311Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "DeleteSupplierCommand.cs",
+              "DocumentMoniker": "C:\\Users\\parshad.kyada\\Desktop\\project\\backend\\src\\InventoryManagement.Application\\Commands\\Products\\DeleteSupplierCommand.cs",
+              "RelativeDocumentMoniker": "src\\InventoryManagement.Application\\Commands\\Products\\DeleteSupplierCommand.cs",
+              "ToolTip": "C:\\Users\\parshad.kyada\\Desktop\\project\\backend\\src\\InventoryManagement.Application\\Commands\\Products\\DeleteSupplierCommand.cs",
+              "RelativeToolTip": "src\\InventoryManagement.Application\\Commands\\Products\\DeleteSupplierCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T05:16:29.061Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\parshad.kyada\\Desktop\\project\\backend\\src\\InventoryManagement.Domain\\Entities\\Order.cs",
+              "RelativeDocumentMoniker": "src\\InventoryManagement.Domain\\Entities\\Order.cs",
+              "ToolTip": "C:\\Users\\parshad.kyada\\Desktop\\project\\backend\\src\\InventoryManagement.Domain\\Entities\\Order.cs",
+              "RelativeToolTip": "src\\InventoryManagement.Domain\\Entities\\Order.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAA9wBAAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T05:27:56.202Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "DeleteCategoryCommand.cs",
+              "DocumentMoniker": "C:\\Users\\parshad.kyada\\Desktop\\project\\backend\\src\\InventoryManagement.Application\\Commands\\Products\\DeleteCategoryCommand.cs",
+              "RelativeDocumentMoniker": "src\\InventoryManagement.Application\\Commands\\Products\\DeleteCategoryCommand.cs",
+              "ToolTip": "C:\\Users\\parshad.kyada\\Desktop\\project\\backend\\src\\InventoryManagement.Application\\Commands\\Products\\DeleteCategoryCommand.cs",
+              "RelativeToolTip": "src\\InventoryManagement.Application\\Commands\\Products\\DeleteCategoryCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T05:14:24.552Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
               "Title": "DeleteCategoryHandler.cs",
-              "DocumentMoniker": "D:\\Downloads\\project-master\\project-master\\backend\\src\\InventoryManagement.Application\\Handlers\\Products\\DeleteCategoryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\parshad.kyada\\Desktop\\project\\backend\\src\\InventoryManagement.Application\\Handlers\\Products\\DeleteCategoryHandler.cs",
               "RelativeDocumentMoniker": "src\\InventoryManagement.Application\\Handlers\\Products\\DeleteCategoryHandler.cs",
-              "ToolTip": "D:\\Downloads\\project-master\\project-master\\backend\\src\\InventoryManagement.Application\\Handlers\\Products\\DeleteCategoryHandler.cs",
+              "ToolTip": "C:\\Users\\parshad.kyada\\Desktop\\project\\backend\\src\\InventoryManagement.Application\\Handlers\\Products\\DeleteCategoryHandler.cs",
               "RelativeToolTip": "src\\InventoryManagement.Application\\Handlers\\Products\\DeleteCategoryHandler.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -323,23 +491,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 27,
               "Title": "SuppliersController.cs",
-              "DocumentMoniker": "D:\\Downloads\\project-master\\project-master\\backend\\src\\InventoryManagement.API\\Controllers\\SuppliersController.cs",
+              "DocumentMoniker": "C:\\Users\\parshad.kyada\\Desktop\\project\\backend\\src\\InventoryManagement.API\\Controllers\\SuppliersController.cs",
               "RelativeDocumentMoniker": "src\\InventoryManagement.API\\Controllers\\SuppliersController.cs",
-              "ToolTip": "D:\\Downloads\\project-master\\project-master\\backend\\src\\InventoryManagement.API\\Controllers\\SuppliersController.cs",
+              "ToolTip": "C:\\Users\\parshad.kyada\\Desktop\\project\\backend\\src\\InventoryManagement.API\\Controllers\\SuppliersController.cs",
               "RelativeToolTip": "src\\InventoryManagement.API\\Controllers\\SuppliersController.cs",
-              "ViewState": "AgIAADsAAAAAAAAAAAAAADsAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAADgAAAAAAAAAAIBJwDsAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-09T05:12:06.368Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 28,
               "Title": "CategoriesController.cs",
-              "DocumentMoniker": "D:\\Downloads\\project-master\\project-master\\backend\\src\\InventoryManagement.API\\Controllers\\CategoriesController.cs",
+              "DocumentMoniker": "C:\\Users\\parshad.kyada\\Desktop\\project\\backend\\src\\InventoryManagement.API\\Controllers\\CategoriesController.cs",
               "RelativeDocumentMoniker": "src\\InventoryManagement.API\\Controllers\\CategoriesController.cs",
-              "ToolTip": "D:\\Downloads\\project-master\\project-master\\backend\\src\\InventoryManagement.API\\Controllers\\CategoriesController.cs",
+              "ToolTip": "C:\\Users\\parshad.kyada\\Desktop\\project\\backend\\src\\InventoryManagement.API\\Controllers\\CategoriesController.cs",
               "RelativeToolTip": "src\\InventoryManagement.API\\Controllers\\CategoriesController.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAD4vxYAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -347,21 +515,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 29,
               "Title": "20250708160426_InitialCreate.cs",
               "DocumentMoniker": "C:\\Users\\parshad.kyada\\Desktop\\project\\backend\\src\\InventoryManagement.Infrastructure\\Migrations\\20250708160426_InitialCreate.cs",
+              "RelativeDocumentMoniker": "src\\InventoryManagement.Infrastructure\\Migrations\\20250708160426_InitialCreate.cs",
               "ToolTip": "C:\\Users\\parshad.kyada\\Desktop\\project\\backend\\src\\InventoryManagement.Infrastructure\\Migrations\\20250708160426_InitialCreate.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "RelativeToolTip": "src\\InventoryManagement.Infrastructure\\Migrations\\20250708160426_InitialCreate.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-08T16:04:27.164Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 30,
               "Title": "20250708155138_InitialCreate.cs",
               "DocumentMoniker": "C:\\Users\\parshad.kyada\\Desktop\\project\\backend\\src\\InventoryManagement.Infrastructure\\Migrations\\20250708155138_InitialCreate.cs",
+              "RelativeDocumentMoniker": "src\\InventoryManagement.Infrastructure\\Migrations\\20250708155138_InitialCreate.cs",
               "ToolTip": "C:\\Users\\parshad.kyada\\Desktop\\project\\backend\\src\\InventoryManagement.Infrastructure\\Migrations\\20250708155138_InitialCreate.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "RelativeToolTip": "src\\InventoryManagement.Infrastructure\\Migrations\\20250708155138_InitialCreate.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-08T15:51:38.988Z"
             }

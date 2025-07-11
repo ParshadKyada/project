@@ -20,3 +20,4 @@ D:\Downloads\project-master\project-master\backend\src\InventoryManagement.Domai
 D:\Downloads\project-master\project-master\backend\src\InventoryManagement.Domain\obj\Debug\net8.0\refint\InventoryManagement.Domain.dll
 D:\Downloads\project-master\project-master\backend\src\InventoryManagement.Domain\obj\Debug\net8.0\InventoryManagement.Domain.pdb
 D:\Downloads\project-master\project-master\backend\src\InventoryManagement.Domain\obj\Debug\net8.0\ref\InventoryManagement.Domain.dll
+C:\Users\parshad.kyada\Desktop\project\backend\src\InventoryManagement.Domain\obj\Debug\net8.0\InventoryManagement.Domain.sourcelink.json

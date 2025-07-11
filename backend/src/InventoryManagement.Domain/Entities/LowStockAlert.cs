@@ -4,6 +4,7 @@ namespace InventoryManagement.Domain.Entities;
 
 public class LowStockAlert : BaseEntity
 {
+    public Guid Id { get; set; }
     public int CurrentStock { get; set; }
     public int ReorderLevel { get; set; }
     public AlertSeverity Severity { get; set; }

@@ -30,7 +30,9 @@ class ProductService {
       },
       body: JSON.stringify(request),
     });
-    if (!res.ok) throw new Error('Failed to create product');
+    // if (!res.ok) throw new Error('Failed to create product');
+    console.log(res.formData)
+    if (!res.ok) throw new Error();
     return res.json();
   }
 

@@ -1879,6 +1879,9 @@
           "supplierId": {
             "type": "string",
             "format": "uuid"
+          },
+          "isActive": {
+            "type": "boolean"
           }
         },
         "additionalProperties": false

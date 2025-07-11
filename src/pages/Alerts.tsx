@@ -5,30 +5,45 @@ import Card from '../components/common/Card';
 import Button from '../components/common/Button';
 import LoadingSpinner from '../components/common/LoadingSpinner';
 import { AlertTriangle, CheckCircle, Eye } from 'lucide-react';
+import Modal from '../components/common/Modal';
+import Pagination from '../components/common/Pagination';
 
 const Alerts: React.FC = () => {
   const [alerts, setAlerts] = useState<LowStockAlert[]>([]);
   const [loading, setLoading] = useState(true);
+  const [viewingAlert, setViewingAlert] = useState<LowStockAlert | null>(null);
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 10;
 
   useEffect(() => {
+    let isMounted = true;
     const fetchAlerts = async () => {
       try {
         const data = await dashboardService.getLowStockAlerts();
-        setAlerts(data);
+        if (isMounted) {
+          setAlerts(data);
+          setLoading(false);
+        }
       } catch (error) {
-        console.error('Error fetching alerts:', error);
-      } finally {
-        setLoading(false);
+        if (isMounted) {
+          console.error('Error fetching alerts:', error);
+          setLoading(false);
+        }
       }
     };
 
     fetchAlerts();
+    const interval = setInterval(fetchAlerts, 10000); // Poll every 10 seconds
+    return () => {
+      isMounted = false;
+      clearInterval(interval);
+    };
   }, []);
 
   const getSeverityColor = (severity: string) => {
     switch (severity) {
-      case 'Critical': return 'bg-red-100 text-red-800 border-red-200';
-      case 'Out of Stock': return 'bg-red-100 text-red-800 border-red-200';
+      case 'Critical': return 'bg-orange-100 text-orange-800 border-orange-200';
+      case 'OutOfStock': return 'bg-red-100 text-red-800 border-red-200';
       case 'Low': return 'bg-yellow-100 text-yellow-800 border-yellow-200';
       default: return 'bg-gray-100 text-gray-800 border-gray-200';
     }
@@ -37,7 +52,8 @@ const Alerts: React.FC = () => {
   const getSeverityIcon = (severity: string) => {
     switch (severity) {
       case 'Critical':
-      case 'Out of Stock':
+        return <AlertTriangle className="h-5 w-5 text-orange-500" />;
+      case 'OutOfStock':
         return <AlertTriangle className="h-5 w-5 text-red-500" />;
       case 'Low':
         return <AlertTriangle className="h-5 w-5 text-yellow-500" />;
@@ -49,9 +65,11 @@ const Alerts: React.FC = () => {
   const handleMarkAsRead = async (alertId: string) => {
     try {
       await dashboardService.markAlertAsRead(alertId);
-      setAlerts(alerts.map(alert => 
-        alert.id === alertId ? { ...alert, isRead: true } : alert
-      ));
+      // Re-fetch alerts after marking as read
+      setLoading(true);
+      const data = await dashboardService.getLowStockAlerts();
+      setAlerts(data);
+      setLoading(false);
     } catch (error) {
       console.error('Error marking alert as read:', error);
     }
@@ -67,6 +85,12 @@ const Alerts: React.FC = () => {
 
   const unreadAlerts = alerts.filter(alert => !alert.isRead);
   const readAlerts = alerts.filter(alert => alert.isRead);
+  const sortedAlerts = [
+    ...unreadAlerts,
+    ...readAlerts
+  ];
+  const paginatedAlerts = sortedAlerts.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
+  const totalPages = Math.ceil(sortedAlerts.length / itemsPerPage);
 
   return (
     <div className="space-y-6">
@@ -87,7 +111,7 @@ const Alerts: React.FC = () => {
             <div>
               <p className="text-sm font-medium text-gray-600">Out of Stock</p>
               <p className="text-2xl font-bold text-gray-900">
-                {alerts.filter(a => a.severity === 'Out of Stock').length}
+                {alerts.filter(a => a.severity === 'OutOfStock').length}
               </p>
             </div>
           </div>
@@ -118,93 +142,81 @@ const Alerts: React.FC = () => {
         </Card>
       </div>
 
-      {/* Unread Alerts */}
-      {unreadAlerts.length > 0 && (
-        <div>
-          <h2 className="text-lg font-semibold text-gray-900 mb-4">Unread Alerts</h2>
-          <div className="space-y-3">
-            {unreadAlerts.map((alert) => (
-              <Card key={alert.id} className={`border-l-4 ${getSeverityColor(alert.severity).includes('red') ? 'border-l-red-500' : getSeverityColor(alert.severity).includes('yellow') ? 'border-l-yellow-500' : 'border-l-gray-500'}`}>
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center">
-                    {getSeverityIcon(alert.severity)}
-                    <div className="ml-3">
-                      <h3 className="font-medium text-gray-900">{alert.productName}</h3>
-                      <p className="text-sm text-gray-600">
-                        Current stock: {alert.currentStock} | Reorder level: {alert.reorderLevel}
-                      </p>
-                      <p className="text-xs text-gray-500 mt-1">
-                        {new Date(alert.createdAt).toLocaleString()}
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <span className={`px-2 py-1 text-xs font-medium rounded-full ${getSeverityColor(alert.severity)}`}>
-                      {alert.severity}
-                    </span>
-                    <Button
-                      size="sm"
-                      variant="secondary"
-                      icon={Eye}
-                      onClick={() => {
-                        // View product details
-                        console.log('View product:', alert.productId);
-                      }}
-                    />
-                    <Button
-                      size="sm"
-                      variant="secondary"
-                      icon={CheckCircle}
-                      onClick={() => handleMarkAsRead(alert.id)}
-                    />
-                  </div>
+      {/* Alerts List (paginated) */}
+      <div className="space-y-3">
+        {paginatedAlerts.map((alert) => (
+          <Card key={alert.id} className={`border-l-4 ${getSeverityColor(alert.severity).includes('red') ? 'border-l-red-500' : getSeverityColor(alert.severity).includes('yellow') ? 'border-l-yellow-500' : 'border-l-gray-500'}${alert.isRead ? ' opacity-60' : ''}`}>
+            <div className="flex items-center justify-between">
+              <div className="flex items-center">
+                {getSeverityIcon(alert.severity)}
+                <div className="ml-3">
+                  <h3 className="font-medium text-gray-900">{alert.productName}</h3>
+                  <p className="text-sm text-gray-600">
+                    Current stock: {alert.currentStock} | Reorder level: {alert.reorderLevel}
+                  </p>
+                  <p className="text-xs text-gray-500 mt-1">
+                    {new Date(alert.createdAt).toLocaleString()}
+                  </p>
                 </div>
-              </Card>
-            ))}
-          </div>
-        </div>
+              </div>
+              <div className="flex items-center space-x-2">
+                <span className={`px-2 py-1 text-xs font-medium rounded-full ${getSeverityColor(alert.severity)}`}>
+                  {alert.severity}
+                </span>
+                <Button
+                  size="sm"
+                  variant="secondary"
+                  icon={Eye}
+                  onClick={() => setViewingAlert(alert)}
+                />
+                {!alert.isRead && (
+                  <Button
+                    size="sm"
+                    variant="secondary"
+                    icon={CheckCircle}
+                    onClick={() => handleMarkAsRead(alert.id)}
+                  />
+                )}
+              </div>
+            </div>
+          </Card>
+        ))}
+      </div>
+
+      {/* Pagination */}
+      {totalPages > 1 && (
+        <Pagination
+          currentPage={currentPage}
+          totalPages={totalPages}
+          onPageChange={setCurrentPage}
+        />
       )}
 
-      {/* Read Alerts */}
-      {readAlerts.length > 0 && (
-        <div>
-          <h2 className="text-lg font-semibold text-gray-900 mb-4">Read Alerts</h2>
-          <div className="space-y-3">
-            {readAlerts.map((alert) => (
-              <Card key={alert.id} className="opacity-60">
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center">
-                    {getSeverityIcon(alert.severity)}
-                    <div className="ml-3">
-                      <h3 className="font-medium text-gray-900">{alert.productName}</h3>
-                      <p className="text-sm text-gray-600">
-                        Current stock: {alert.currentStock} | Reorder level: {alert.reorderLevel}
-                      </p>
-                      <p className="text-xs text-gray-500 mt-1">
-                        {new Date(alert.createdAt).toLocaleString()}
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <span className={`px-2 py-1 text-xs font-medium rounded-full ${getSeverityColor(alert.severity)}`}>
-                      {alert.severity}
-                    </span>
-                    <Button
-                      size="sm"
-                      variant="secondary"
-                      icon={Eye}
-                      onClick={() => {
-                        // View product details
-                        console.log('View product:', alert.productId);
-                      }}
-                    />
-                  </div>
-                </div>
-              </Card>
-            ))}
+      {/* View Alert Modal */}
+      <Modal isOpen={!!viewingAlert} onClose={() => setViewingAlert(null)} title="Alert Details" size="md">
+        {viewingAlert && (
+          <div className="space-y-4">
+            <div>
+              <span className="font-semibold">Product:</span> {viewingAlert.productName}
+            </div>
+            <div>
+              <span className="font-semibold">Current Stock:</span> {viewingAlert.currentStock}
+            </div>
+            <div>
+              <span className="font-semibold">Reorder Level:</span> {viewingAlert.reorderLevel}
+            </div>
+            <div>
+              <span className="font-semibold">Severity:</span> {viewingAlert.severity}
+            </div>
+            <div>
+              <span className="font-semibold">Created At:</span> {new Date(viewingAlert.createdAt).toLocaleString()}
+            </div>
+            <div>
+              <span className="font-semibold">Status:</span> {viewingAlert.isRead ? 'Read' : 'Unread'}
+            </div>
           </div>
-        </div>
-      )}
+        )}
+      </Modal>
 
       {alerts.length === 0 && (
         <Card className="text-center py-8">

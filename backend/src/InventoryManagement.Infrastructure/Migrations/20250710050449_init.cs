@@ -247,9 +247,9 @@ namespace InventoryManagement.Infrastructure.Migrations
                 columns: new[] { "Id", "CreatedAt", "CreatedBy", "Description", "IsActive", "IsDeleted", "Name", "UpdatedAt", "UpdatedBy" },
                 values: new object[,]
                 {
-                    { new Guid("11111111-1111-1111-1111-111111111111"), new DateTime(2025, 7, 9, 19, 0, 18, 940, DateTimeKind.Utc).AddTicks(2698), null, "Electronic devices and accessories", true, false, "Electronics", new DateTime(2025, 7, 9, 19, 0, 18, 940, DateTimeKind.Utc).AddTicks(2701), null },
-                    { new Guid("22222222-2222-2222-2222-222222222222"), new DateTime(2025, 7, 9, 19, 0, 18, 940, DateTimeKind.Utc).AddTicks(2722), null, "Office equipment and supplies", true, false, "Office Supplies", new DateTime(2025, 7, 9, 19, 0, 18, 940, DateTimeKind.Utc).AddTicks(2723), null },
-                    { new Guid("33333333-3333-3333-3333-333333333333"), new DateTime(2025, 7, 9, 19, 0, 18, 940, DateTimeKind.Utc).AddTicks(2726), null, "Gaming peripherals and accessories", true, false, "Gaming", new DateTime(2025, 7, 9, 19, 0, 18, 940, DateTimeKind.Utc).AddTicks(2726), null }
+                    { new Guid("11111111-1111-1111-1111-111111111111"), new DateTime(2025, 7, 10, 5, 4, 47, 136, DateTimeKind.Utc).AddTicks(4401), null, "Electronic devices and accessories", true, false, "Electronics", new DateTime(2025, 7, 10, 5, 4, 47, 136, DateTimeKind.Utc).AddTicks(4404), null },
+                    { new Guid("22222222-2222-2222-2222-222222222222"), new DateTime(2025, 7, 10, 5, 4, 47, 136, DateTimeKind.Utc).AddTicks(4417), null, "Office equipment and supplies", true, false, "Office Supplies", new DateTime(2025, 7, 10, 5, 4, 47, 136, DateTimeKind.Utc).AddTicks(4418), null },
+                    { new Guid("33333333-3333-3333-3333-333333333333"), new DateTime(2025, 7, 10, 5, 4, 47, 136, DateTimeKind.Utc).AddTicks(4421), null, "Gaming peripherals and accessories", true, false, "Gaming", new DateTime(2025, 7, 10, 5, 4, 47, 136, DateTimeKind.Utc).AddTicks(4421), null }
                 });
 
             migrationBuilder.InsertData(
@@ -257,8 +257,8 @@ namespace InventoryManagement.Infrastructure.Migrations
                 columns: new[] { "Id", "Address", "ContactEmail", "ContactPhone", "CreatedAt", "CreatedBy", "IsActive", "IsDeleted", "Name", "UpdatedAt", "UpdatedBy" },
                 values: new object[,]
                 {
-                    { new Guid("44444444-4444-4444-4444-444444444444"), "123 Tech St, Silicon Valley, CA", "sales@techcorp.com", "+1-555-0123", new DateTime(2025, 7, 9, 19, 0, 18, 940, DateTimeKind.Utc).AddTicks(2731), null, true, false, "TechCorp Ltd", new DateTime(2025, 7, 9, 19, 0, 18, 940, DateTimeKind.Utc).AddTicks(2731), null },
-                    { new Guid("55555555-5555-5555-5555-555555555555"), "456 Business Ave, New York, NY", "orders@officesolutions.com", "+1-555-0456", new DateTime(2025, 7, 9, 19, 0, 18, 940, DateTimeKind.Utc).AddTicks(2748), null, true, false, "Office Solutions Inc", new DateTime(2025, 7, 9, 19, 0, 18, 940, DateTimeKind.Utc).AddTicks(2749), null }
+                    { new Guid("44444444-4444-4444-4444-444444444444"), "123 Tech St, Silicon Valley, CA", "sales@techcorp.com", "+1-555-0123", new DateTime(2025, 7, 10, 5, 4, 47, 136, DateTimeKind.Utc).AddTicks(4440), null, true, false, "TechCorp Ltd", new DateTime(2025, 7, 10, 5, 4, 47, 136, DateTimeKind.Utc).AddTicks(4441), null },
+                    { new Guid("55555555-5555-5555-5555-555555555555"), "456 Business Ave, New York, NY", "orders@officesolutions.com", "+1-555-0456", new DateTime(2025, 7, 10, 5, 4, 47, 136, DateTimeKind.Utc).AddTicks(4446), null, true, false, "Office Solutions Inc", new DateTime(2025, 7, 10, 5, 4, 47, 136, DateTimeKind.Utc).AddTicks(4446), null }
                 });
 
             migrationBuilder.InsertData(
@@ -266,9 +266,9 @@ namespace InventoryManagement.Infrastructure.Migrations
                 columns: new[] { "Id", "CreatedAt", "CreatedBy", "Email", "FirstName", "IsActive", "IsDeleted", "LastLoginAt", "LastName", "PasswordHash", "Role", "UpdatedAt", "UpdatedBy" },
                 values: new object[,]
                 {
-                    { new Guid("66666666-6666-6666-6666-666666666666"), new DateTime(2025, 7, 9, 19, 0, 18, 940, DateTimeKind.Utc).AddTicks(2757), null, "admin@inventory.com", "Admin", true, false, null, "User", "$2a$11$TjW8ZUg0p0r9V9aRhsW4f.ATIeiWYiD4rbW58HVK8YQu2Jgp1VsLG", 3, new DateTime(2025, 7, 9, 19, 0, 18, 940, DateTimeKind.Utc).AddTicks(2757), null },
-                    { new Guid("77777777-7777-7777-7777-777777777777"), new DateTime(2025, 7, 9, 19, 0, 19, 69, DateTimeKind.Utc).AddTicks(6425), null, "staff@inventory.com", "Staff", true, false, null, "User", "$2a$11$nnn68J5JNkkhLJIDaxv9fe1lCQ6rPavvAcEfH/qi2HKwf/ebQJUoS", 2, new DateTime(2025, 7, 9, 19, 0, 19, 69, DateTimeKind.Utc).AddTicks(6428), null },
-                    { new Guid("88888888-8888-8888-8888-888888888888"), new DateTime(2025, 7, 9, 19, 0, 19, 202, DateTimeKind.Utc).AddTicks(3179), null, "cust@inventory.com", "Customer", true, false, null, "User", "$2a$11$pPJRZrq0to11O7RhurO3DuOokko48l7OcAYpsaUeEMQDPWi0SgyMC", 1, new DateTime(2025, 7, 9, 19, 0, 19, 202, DateTimeKind.Utc).AddTicks(3184), null }
+                    { new Guid("66666666-6666-6666-6666-666666666666"), new DateTime(2025, 7, 10, 5, 4, 47, 136, DateTimeKind.Utc).AddTicks(4452), null, "admin@inventory.com", "Admin", true, false, null, "User", "$2a$11$S1CeshrbmZxRCGwfMryyEeyQuNsaqJTQ0EEoDMSu9sbBfCSC2UQR6", 3, new DateTime(2025, 7, 10, 5, 4, 47, 136, DateTimeKind.Utc).AddTicks(4452), null },
+                    { new Guid("77777777-7777-7777-7777-777777777777"), new DateTime(2025, 7, 10, 5, 4, 47, 267, DateTimeKind.Utc).AddTicks(4698), null, "staff@inventory.com", "Staff", true, false, null, "User", "$2a$11$c9RVqbFBidNJrf2eoF3I3O1J/bZmczeDzJMH3iJ/GAg3rdP8FyT.S", 2, new DateTime(2025, 7, 10, 5, 4, 47, 267, DateTimeKind.Utc).AddTicks(4702), null },
+                    { new Guid("88888888-8888-8888-8888-888888888888"), new DateTime(2025, 7, 10, 5, 4, 47, 413, DateTimeKind.Utc).AddTicks(7255), null, "cust@inventory.com", "Customer", true, false, null, "User", "$2a$11$AQscL6jLvPo3bcbdd7Xdr.s30dCn3j74w.10wSa09XArWN.d3G5t6", 1, new DateTime(2025, 7, 10, 5, 4, 47, 413, DateTimeKind.Utc).AddTicks(7260), null }
                 });
 
             migrationBuilder.CreateIndex(

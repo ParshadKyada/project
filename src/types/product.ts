@@ -8,8 +8,10 @@ export interface Product {
   reorderLevel: number;
   categoryId: string;
   supplierId: string;
-  category?: Category;
-  supplier?: Supplier;
+  categoryName: string;
+  supplierName: string;
+  // category?: Category;
+  // supplier?: Supplier;
   isActive: boolean;
   createdAt: string;
   updatedAt: string;

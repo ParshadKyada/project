@@ -322,3 +322,5 @@ D:\Downloads\project-master\project-master\backend\src\InventoryManagement.API\o
 D:\Downloads\project-master\project-master\backend\src\InventoryManagement.API\obj\Debug\net8.0\InventoryManagement.API.pdb
 D:\Downloads\project-master\project-master\backend\src\InventoryManagement.API\obj\Debug\net8.0\InventoryManagement.API.genruntimeconfig.cache
 D:\Downloads\project-master\project-master\backend\src\InventoryManagement.API\obj\Debug\net8.0\ref\InventoryManagement.API.dll
+C:\Users\parshad.kyada\Desktop\project\backend\src\InventoryManagement.API\obj\Debug\net8.0\InventoryManagement.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\parshad.kyada\Desktop\project\backend\src\InventoryManagement.API\bin\Debug\net8.0\RabbitMQ.Client.dll

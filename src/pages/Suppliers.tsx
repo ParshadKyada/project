@@ -7,12 +7,15 @@ import Table from '../components/common/Table';
 import Modal from '../components/common/Modal';
 import LoadingSpinner from '../components/common/LoadingSpinner';
 import { Plus, Edit, Trash2, Mail, Phone } from 'lucide-react';
+import Pagination from '../components/common/Pagination';
 
 const Suppliers: React.FC = () => {
   const [suppliers, setSuppliers] = useState<Supplier[]>([]);
   const [loading, setLoading] = useState(true);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [editingSupplier, setEditingSupplier] = useState<Supplier | null>(null);
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 10;
 
   useEffect(() => {
     const fetchSuppliers = async () => {
@@ -110,6 +113,9 @@ const Suppliers: React.FC = () => {
     }
   ];
 
+  const paginatedSuppliers = suppliers.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
+  const totalPages = Math.ceil(suppliers.length / itemsPerPage);
+
   if (loading) {
     return (
       <div className="flex items-center justify-center h-64">
@@ -134,8 +140,16 @@ const Suppliers: React.FC = () => {
       </div>
 
       <Card>
-        <Table data={suppliers} columns={columns} />
+        <Table data={paginatedSuppliers} columns={columns} />
       </Card>
+
+      {totalPages > 1 && (
+        <Pagination
+          currentPage={currentPage}
+          totalPages={totalPages}
+          onPageChange={setCurrentPage}
+        />
+      )}
 
       <SupplierModal
         isOpen={isModalOpen}

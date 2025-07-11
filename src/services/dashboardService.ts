@@ -12,7 +12,7 @@ class DashboardService {
   }
 
   async getLowStockAlerts(): Promise<LowStockAlert[]> {
-    const res = await fetch('https://localhost:7267/api/Dashboard/alerts', {
+    const res = await fetch('/api/dashboard/alerts', {
       headers: getAuthHeaders(),
     });
     if (!res.ok) throw new Error('Failed to fetch low stock alerts');
@@ -20,7 +20,7 @@ class DashboardService {
   }
 
   async markAlertAsRead(alertId: string): Promise<void> {
-    const res = await fetch(`https://localhost:7267/api/Dashboard/alerts/${alertId}/read`, {
+    const res = await fetch(`/api/dashboard/alerts/${alertId}/read`, {
       method: 'PATCH',
       headers: getAuthHeaders(),
     });

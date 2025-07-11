@@ -1,11 +1,14 @@
-using InventoryManagement.Application.Commands.Products;
 using InventoryManagement.Application.Interfaces;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
-namespace InventoryManagement.Application.Handlers.Products;
+public class MarkAlertAsReadCommand : IRequest
+{
+    public Guid AlertId { get; set; }
+    public MarkAlertAsReadCommand(Guid alertId) => AlertId = alertId;
+}
 
-public class MarkAlertAsReadHandler : IRequestHandler<MarkAlertAsReadCommand, Unit>
+public class MarkAlertAsReadHandler : IRequestHandler<MarkAlertAsReadCommand>
 {
     private readonly IApplicationDbContext _context;
 
@@ -14,13 +17,13 @@ public class MarkAlertAsReadHandler : IRequestHandler<MarkAlertAsReadCommand, Un
         _context = context;
     }
 
-    public async Task<Unit> Handle(MarkAlertAsReadCommand request, CancellationToken cancellationToken)
+    public async Task Handle(MarkAlertAsReadCommand request, CancellationToken cancellationToken)
     {
         var alert = await _context.LowStockAlerts.FirstOrDefaultAsync(a => a.Id == request.AlertId, cancellationToken);
-        if (alert == null)
-            throw new InvalidOperationException("Alert not found");
-        alert.IsRead = true;
-        await _context.SaveChangesAsync(cancellationToken);
-        return Unit.Value;
+        if (alert != null && !alert.IsRead)
+        {
+            alert.IsRead = true;
+            await _context.SaveChangesAsync(cancellationToken);
+        }
     }
-} 
+}

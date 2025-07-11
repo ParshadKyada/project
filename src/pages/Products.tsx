@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import { Product, Category, Supplier } from '../types/product';
 import { productService } from '../services/productService';
 import Card from '../components/common/Card';
@@ -6,7 +7,8 @@ import Button from '../components/common/Button';
 import Table from '../components/common/Table';
 import Modal from '../components/common/Modal';
 import LoadingSpinner from '../components/common/LoadingSpinner';
-import { Plus, Edit, Trash2, Search, Filter } from 'lucide-react';
+import { Plus, Edit, Trash2, Search, Filter, Eye } from 'lucide-react';
+import Pagination from '../components/common/Pagination';
 
 const Products: React.FC = () => {
   const [products, setProducts] = useState<Product[]>([]);
@@ -15,8 +17,13 @@ const Products: React.FC = () => {
   const [loading, setLoading] = useState(true);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [editingProduct, setEditingProduct] = useState<Product | null>(null);
+  const [viewingProduct, setViewingProduct] = useState<Product | null>(null);
+  const location = useLocation();
   const [searchTerm, setSearchTerm] = useState('');
   const [filterCategory, setFilterCategory] = useState('');
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);  // Error message state
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 10;
 
   useEffect(() => {
     const fetchData = async () => {
@@ -26,6 +33,7 @@ const Products: React.FC = () => {
           productService.getCategories(),
           productService.getSuppliers()
         ]);
+
         setProducts(productsData);
         setCategories(categoriesData);
         setSuppliers(suppliersData);
@@ -39,12 +47,24 @@ const Products: React.FC = () => {
     fetchData();
   }, []);
 
+  // Open Add Product modal if ?add=1 is present in URL
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    if (params.get('add') === '1') {
+      setEditingProduct(null);
+      setIsModalOpen(true);
+    }
+  }, [location.search]);
+
   const filteredProducts = products.filter(product => {
     const matchesSearch = product.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                         product.sku.toLowerCase().includes(searchTerm.toLowerCase());
+      product.sku.toLowerCase().includes(searchTerm.toLowerCase());
     const matchesCategory = !filterCategory || product.categoryId === filterCategory;
     return matchesSearch && matchesCategory;
   });
+
+  const paginatedProducts = filteredProducts.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
+  const totalPages = Math.ceil(filteredProducts.length / itemsPerPage);
 
   const handleDelete = async (id: string) => {
     if (window.confirm('Are you sure you want to delete this product?')) {
@@ -61,6 +81,10 @@ const Products: React.FC = () => {
     if (product.stockQuantity === 0) {
       return { label: 'Out of Stock', color: 'bg-red-100 text-red-800' };
     } else if (product.stockQuantity <= product.reorderLevel) {
+      // Show 'Critical' if stock is less than or equal to half the reorder level, else 'Low Stock'
+      if (product.stockQuantity <= Math.max(1, Math.floor(product.reorderLevel / 2))) {
+        return { label: 'Critical', color: 'bg-orange-100 text-orange-800' };
+      }
       return { label: 'Low Stock', color: 'bg-yellow-100 text-yellow-800' };
     } else {
       return { label: 'In Stock', color: 'bg-green-100 text-green-800' };
@@ -81,12 +105,12 @@ const Products: React.FC = () => {
     {
       key: 'category',
       header: 'Category',
-      render: (product: Product) => product.category?.name || 'N/A'
+      render: (product: Product) => product.categoryName || 'N/A'
     },
     {
       key: 'supplier',
       header: 'Supplier',
-      render: (product: Product) => product.supplier?.name || 'N/A'
+      render: (product: Product) => product.supplierName || 'N/A'
     },
     {
       key: 'price',
@@ -113,6 +137,12 @@ const Products: React.FC = () => {
       header: 'Actions',
       render: (product: Product) => (
         <div className="flex space-x-2">
+          <Button
+            size="sm"
+            variant="secondary"
+            icon={Eye}
+            onClick={() => setViewingProduct(product)}
+          />
           <Button
             size="sm"
             variant="secondary"
@@ -194,8 +224,17 @@ const Products: React.FC = () => {
 
       {/* Products Table */}
       <Card>
-        <Table data={filteredProducts} columns={columns} />
+        <Table data={paginatedProducts} columns={columns} />
       </Card>
+
+      {/* Pagination */}
+      {totalPages > 1 && (
+        <Pagination
+          currentPage={currentPage}
+          totalPages={totalPages}
+          onPageChange={setCurrentPage}
+        />
+      )}
 
       {/* Product Modal */}
       <ProductModal
@@ -204,6 +243,7 @@ const Products: React.FC = () => {
         product={editingProduct}
         categories={categories}
         suppliers={suppliers}
+        errorMessage={errorMessage}  // Pass error message to modal
         onSave={(product) => {
           if (editingProduct) {
             setProducts(products.map(p => p.id === product.id ? product : p));
@@ -212,7 +252,43 @@ const Products: React.FC = () => {
           }
           setIsModalOpen(false);
         }}
+        setErrorMessage={setErrorMessage}  // Clear error message when modal is closed
       />
+
+      {/* Product View Modal */}
+      <Modal isOpen={!!viewingProduct} onClose={() => setViewingProduct(null)} title="Product Details" size="lg">
+        {viewingProduct && (
+          <div className="space-y-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <span className="font-semibold">Name:</span> {viewingProduct.name}
+              </div>
+              <div>
+                <span className="font-semibold">SKU:</span> {viewingProduct.sku}
+              </div>
+              <div>
+                <span className="font-semibold">Category:</span> {viewingProduct.categoryName || 'N/A'}
+              </div>
+              <div>
+                <span className="font-semibold">Supplier:</span> {viewingProduct.supplierName || 'N/A'}
+              </div>
+              <div>
+                <span className="font-semibold">Price:</span> ${viewingProduct.price.toFixed(2)}
+              </div>
+              <div>
+                <span className="font-semibold">Stock Quantity:</span> {viewingProduct.stockQuantity}
+              </div>
+              <div>
+                <span className="font-semibold">Reorder Level:</span> {viewingProduct.reorderLevel}
+              </div>
+            </div>
+            <div>
+              <span className="font-semibold">Description:</span>
+              <div className="mt-1 text-gray-700 whitespace-pre-line">{viewingProduct.description || 'N/A'}</div>
+            </div>
+          </div>
+        )}
+      </Modal>
     </div>
   );
 };
@@ -223,7 +299,9 @@ interface ProductModalProps {
   product: Product | null;
   categories: Category[];
   suppliers: Supplier[];
+  errorMessage: string | null;
   onSave: (product: Product) => void;
+  setErrorMessage: (message: string | null) => void;
 }
 
 const ProductModal: React.FC<ProductModalProps> = ({
@@ -232,7 +310,9 @@ const ProductModal: React.FC<ProductModalProps> = ({
   product,
   categories,
   suppliers,
-  onSave
+  errorMessage,
+  onSave,
+  setErrorMessage
 }) => {
   const [formData, setFormData] = useState({
     name: '',
@@ -272,9 +352,19 @@ const ProductModal: React.FC<ProductModalProps> = ({
     }
   }, [product]);
 
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value
+    });
+  };
+
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
+    setErrorMessage(null);
 
     try {
       const productData = {
@@ -296,25 +386,34 @@ const ProductModal: React.FC<ProductModalProps> = ({
       }
 
       onSave(savedProduct);
-    } catch (error) {
-      console.error('Error saving product:', error);
+    } catch(error: any) {
+      console.error('Error saving product:', error);  // Log the full error for debugging
+
+      // Check if the error response exists and has the expected data
+      if (error?.response?.data?.message) {
+        const message = error.response.data.message;  // Extract the error message
+        setErrorMessage(message);  // Set the error message to state
+      } else if (error?.message) {
+        // Handle other types of errors (like network issues)
+        setErrorMessage(error.message);
+      } else {
+        // Fallback for unexpected errors
+        setErrorMessage("An unexpected error occurred.");
+      }
     } finally {
       setLoading(false);
     }
   };
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
   return (
-    <Modal
-      isOpen={isOpen}
-      onClose={onClose}
-      title={product ? 'Edit Product' : 'Add Product'}
-      size="lg"
-    >
+    <Modal isOpen={isOpen} onClose={onClose} title={product ? 'Edit Product' : 'Add Product'} size="lg">
       <form onSubmit={handleSubmit} className="space-y-4">
+        {errorMessage && (
+          <div className="text-red-500 text-sm mb-4">
+            {errorMessage}
+          </div>
+        )}
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-2">

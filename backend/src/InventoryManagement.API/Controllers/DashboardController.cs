@@ -36,7 +36,7 @@ public class DashboardController : ControllerBase
     [HttpPatch("alerts/{id}/read")]
     public async Task<IActionResult> MarkAlertAsRead(Guid id)
     {
-        await _mediator.Send(new MarkAlertAsReadCommand { AlertId = id });
+        await _mediator.Send(new MarkAlertAsReadCommand(id));
         return NoContent();
     }
-} 
+}

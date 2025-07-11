@@ -1,10 +1,12 @@
+import { Order } from "./order";
+
 export interface LowStockAlert {
   id: string;
   productId: string;
   productName: string;
   currentStock: number;
   reorderLevel: number;
-  severity: 'Low' | 'Critical' | 'Out of Stock';
+  severity: 'Low' | 'Critical' | 'OutOfStock';
   createdAt: string;
   isRead: boolean;
 }
@@ -27,3 +29,4 @@ export interface TopProduct {
   totalSold: number;
   revenue: number;
 }
+
